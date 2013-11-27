@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:c="http://java.sun.com/jstl/core"  
+    xmlns:ui="http://java.sun.com/jsf/facelets"  
+    xmlns:a4j="http://richfaces.org/a4j"  
+    xmlns:rich="http://richfaces.org/rich"> 
+
+<body>
+    <rich:panel>
+        <f:facet name="header">
+        <h1>Cadastro de Usuarios</h1>
+        </f:facet>
+        <rich:simpleTogglePanel>
+        <f:facet name="header">
+        Dados Pessoais
+        </f:facet>
+       
+	<br/>
+	<h:form>
+	<h:outputLabel value="Nome: " />
+	<h:inputText value="#{cadastroBean.usuario.nome}" /> <br/>
+	<h:outputLabel value="Nascimento:" />
+	<rich:calendar value="cadastroUsuario.usuario.dataNascimento"></rich:calendar> <br/>
+	<h:outputLabel value="Peso" />
+	<rich:inputNumberSlider value="#{cadastroUsuario.usuario.peso}"></rich:inputNumberSlider> <br/>
+	<h:outputLabel value="Estado" />
+	<rich:comboBox value="#{cadastroBean.usuario.estado}">
+		<f:selectItem itemValue="Minas Gerais" />
+		<f:selectItem itemValue="São Paulo" />
+		<f:selectItem itemValue="Rio de Janeiro" />
+	   </rich:comboBox> <br/>
+	<h:outputLabel value="Cidade" /> <br/>
+	<h:inputText value="#{cadastroBean.usuario.cidade}" id="cidade" /> 
+	<rich:suggestionbox for="cidade" suggestionAction="#{cadastroBean.recuperaCidades}" var="result">
+		<h:column> #{result.nome} </h:column>
+	 </rich:suggestionbox> <br/>
+	 <a4j:commandButton value="Salvar" action="#{cadastroBean.salvar()}" reRender="tabela" />
+	</h:form>
+	</rich:simpleTogglePanel>
+	</rich:panel>
+	
+	<rich:dataTable value="#{cadastroBean.cadastros}" var="cad" id="tabela">
+			<h:column>
+					<f:facet name="header">Nome</f:facet>
+				#{cad.nome}
+			</h:column>
+				<h:column>
+					<f:facet name="header">Data de nascimento</f:facet>
+				#{cad.dataNascimento}
+			</h:column>
+				<h:column>
+					<f:facet name="header">Estado</f:facet>
+				#{cad.estado}
+			</h:column>
+	</rich:dataTable>
+	
+</body> 
+</html>
