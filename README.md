@@ -6,7 +6,7 @@ Computer Science BS files and material used during my graduation at UNIBH
 
 ## Name
 
-Computer Science BS repository
+Computer Science BS repository :)
 
 ## Author
 
