@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F12C9756-9931-2778-2435-2317BC5DD6A1" name="PLANO_SAUDE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:08:30 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PLANO" id="32C8186B-F0FA-41E2-130F-64710745B732">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:09:01 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PLANO" id="EB36CCD3-95DF-758E-4ED3-17241E96FEBA">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:09:01 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_PS" id="3B462C11-322C-5B31-BE6E-E3DDA62D8D49">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:17:16 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>83E36945-933E-70C1-0380-5263935BA3B7</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD0ED5EA-9C26-E1E9-D039-3A4A4195F121" referredColumn="83E36945-933E-70C1-0380-5263935BA3B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8C90FE6-CF9A-E747-1700-93B67B77D47F" name="PLANO_SAUDE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:09:01 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C8186B-F0FA-41E2-130F-64710745B732"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE25266E-1DF7-F890-9DFE-132DBA055E57" name="PLANO_SAUDE_TIPO_PS_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:17:16 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B462C11-322C-5B31-BE6E-E3DDA62D8D49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

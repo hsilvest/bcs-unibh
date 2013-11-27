@@ -1,0 +1,271 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD3D4691-6677-5924-7BEE-A0FE4EC0C565" name="CONSULTA">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:22:54 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CONSULTA" id="F2956CA3-36EC-D312-98B7-6AECE910CBEE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO_MES" id="EC139A15-E546-062A-B0FF-B6C4C72C45B2">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>567FB477-4F60-4A04-CCA5-4AF1DADFB7C7</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0A3666E-9E95-F491-D765-CD876193FF1E" referredColumn="567FB477-4F60-4A04-CCA5-4AF1DADFB7C7"/>
+</associations>
+</Column>
+<Column name="COD_PACIENTE" id="94166BCE-50B0-DAA5-A94F-600F90FD94EF">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9E5A8142-411A-0F13-BC0C-CF02A93D7986</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A693811F-C4EA-7738-5463-9A31E1CC89A2" referredColumn="9E5A8142-411A-0F13-BC0C-CF02A93D7986"/>
+</associations>
+</Column>
+<Column name="CRM" id="7AB86FD7-3AD8-CBCB-0C26-ED7EEFC5A408">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>65CB5844-3C5F-86EC-E6E4-ACD370D8A541</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AA4E186-41A2-0496-082C-27B4AF73E0A9" referredColumn="65CB5844-3C5F-86EC-E6E4-ACD370D8A541"/>
+</associations>
+</Column>
+<Column name="COD_ESP" id="9F24B26D-1B1E-C47B-A315-19988F48A499">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D84DAD0F-BB0F-4A3A-6B83-BBC60D3D4A9B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AA4E186-41A2-0496-082C-27B4AF73E0A9" referredColumn="D84DAD0F-BB0F-4A3A-6B83-BBC60D3D4A9B"/>
+</associations>
+</Column>
+<Column name="COD_PLANO" id="6061C784-AC35-6F92-B2B8-A39DAB240D5C">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>935E887A-F578-28FB-3696-B875FFC37C88</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="070C8D95-1A74-8D2F-FD2D-32F3736E209A" referredColumn="935E887A-F578-28FB-3696-B875FFC37C88"/>
+</associations>
+</Column>
+<Column name="VLR_CONSULTA" id="21992F01-9054-CE82-C99A-07FDD9DF6E3F">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PROC" id="04146A8E-B449-BFE1-44EC-37187F852ABD">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>286133FB-54EA-461B-2CE1-D4B3EE4E47F1</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB29F38D-EA19-0C15-00C0-8F0BB924E19B" referredColumn="286133FB-54EA-461B-2CE1-D4B3EE4E47F1"/>
+</associations>
+</Column>
+<Column name="VLR_PROC" id="BB3249EF-3D98-FA61-2A10-7EED1346CD52">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EXAME" id="1D6B2B93-1DB2-909C-B034-DC6D90715E2E">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>100EFA28-1E4F-F48F-4070-F001BE3C1571</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6603D651-2F24-A731-A48E-90E4F83008E8" referredColumn="100EFA28-1E4F-F48F-4070-F001BE3C1571"/>
+</associations>
+</Column>
+<Column name="VLR_EXAME" id="3BD94518-F868-8663-3886-BE61DFDEC8BE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MED" id="22D64306-332C-0527-7AED-BAA46508367B">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>2592BB2F-8716-31E2-3335-D06A4DBCEEC2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54BE8383-4BBC-3FF8-EAB1-3FB2175E6474" referredColumn="2592BB2F-8716-31E2-3335-D06A4DBCEEC2"/>
+</associations>
+</Column>
+<Column name="VLR_MED" id="71DEF8A2-62C9-EEAB-3C8D-9C4B8E8BEF81">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:25:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="350571A5-3148-BF08-A413-A036E0FB43DE" name="CONSULTA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:28:17 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2956CA3-36EC-D312-98B7-6AECE910CBEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6F951F5-F535-997F-C71D-28BB7A2E230B" name="CONSULTA_PROC_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:29:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="42BE4148-B376-7014-59F2-C809A37264C0" name="CONSULTA_EXAME_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:29:34 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="AD91464E-1D9D-1AAE-3EC0-CC06AA6EDECB" name="CONSULTA_MEDICAMENTO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:29:52 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="FD2CDBF0-F195-46DD-D96C-7D15805770ED" name="CONSULTA_PACIENTE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:28:39 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94166BCE-50B0-DAA5-A94F-600F90FD94EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABB2DAF7-C4E1-8557-B045-CDDB05CD4FFC" name="CONSULTA_PLANO_SAUDE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:28:49 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6061C784-AC35-6F92-B2B8-A39DAB240D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E713BF2-D8DB-23E7-92CF-49B2F327966F" name="CONSULTA_MEDICO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:30:08 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AB86FD7-3AD8-CBCB-0C26-ED7EEFC5A408"/>
+<colUsage columnID="9F24B26D-1B1E-C47B-A315-19988F48A499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D15F453A-D625-C6F3-C759-DC62C57A8DC7" name="CONSULTA_PERIODO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:31:12 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC139A15-E546-062A-B0FF-B6C4C72C45B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8348D5FB-B6AD-F7DB-B4AC-3DA0B62267F0" name="CONSULTA_MEDICAMENTO_FKv2">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-03 22:24:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22D64306-332C-0527-7AED-BAA46508367B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2A0DB8C-33E6-7B57-79D8-8FC62AF96C1F" name="CONSULTA_EXAME_FKv2">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-03 22:24:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D6B2B93-1DB2-909C-B034-DC6D90715E2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB1A5A0E-816F-A0B5-DF6E-B7531F7A0FF6" name="CONSULTA_PROC_FKv2">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-03 22:24:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04146A8E-B449-BFE1-44EC-37187F852ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

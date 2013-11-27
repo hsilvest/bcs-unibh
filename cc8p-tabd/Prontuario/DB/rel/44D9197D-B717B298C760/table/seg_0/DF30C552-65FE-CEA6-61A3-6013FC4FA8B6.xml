@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF30C552-65FE-CEA6-61A3-6013FC4FA8B6" name="TIPO_PS">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:53:46 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPO_PS" id="83E36945-933E-70C1-0380-5263935BA3B7">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:54:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PS" id="FD21A9BC-5364-26DE-CA14-54CB2F0877C1">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:54:47 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4A249D9-F974-C521-6B8C-66DA32F03E7B" name="TIPO_PS_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:08:15 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E36945-933E-70C1-0380-5263935BA3B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

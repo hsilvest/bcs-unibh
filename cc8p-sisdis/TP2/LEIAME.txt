@@ -1,0 +1,7 @@
+Estrutura de Arquivos e Diretórios:
+
+Arquivos Compilados -> Arquivos ja compilados .class conforme solicitado
+javarmiscript       -> Pasta do projeto criado no eclipse, os fontes estão na pasta src dentro desse diretorio.
+RMI.docx            -> Arquivo explicando a nossa aplicação
+
+OBS: Qualquer problema na hora de executar, favor enviar um e-mail para henrique (hs.ccti@gmail.com) 

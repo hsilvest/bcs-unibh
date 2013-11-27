@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AAFDA5A-39E0-2B58-DABC-4AA855B86FFA" name="SOFTWARE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:33:16 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_SOFTWARE" id="34436292-B023-122E-D02C-C833DEAFC826">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:02 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_FABRICA" id="3D16037C-A984-527F-A948-15C69894B20C">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:02 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>251DBA8A-5DC9-2AE9-3D80-0B51688E82C7</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B3377E0-8CD6-CF6F-95EC-592CAE8FB3FA" referredColumn="251DBA8A-5DC9-2AE9-3D80-0B51688E82C7"/>
+</associations>
+</Column>
+<Column name="NOME_SOFTWARE" id="160FD44B-2D10-A843-8368-D1F544C492C9">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:02 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="35B41B8F-9218-4916-65C0-69C5EE3374B5">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:02 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B989B73-CFCE-450C-DF43-2D10274274F6" name="SOFTWARE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:02 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34436292-B023-122E-D02C-C833DEAFC826"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="513DE8F7-180A-522F-D8D7-A9FA6F09B326" name="SOFTWARE_FABRICANTE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:35:43 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D16037C-A984-527F-A948-15C69894B20C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="AECBD3B0-9DD7-05DD-2428-4004647A12E7" name="FATURAMENTO_DIMENSIONAL" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

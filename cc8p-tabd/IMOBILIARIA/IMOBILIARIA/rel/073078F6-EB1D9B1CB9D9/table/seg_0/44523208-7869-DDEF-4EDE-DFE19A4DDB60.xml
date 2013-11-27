@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44523208-7869-DDEF-4EDE-DFE19A4DDB60" name="NOTA_FISCAL">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:13:27 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NF" id="FF86B9C7-DF26-8C53-DAB7-09AFD4326D5C">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:15:42 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA" id="7FCC8D7F-5E9D-475D-ABFF-4ED1E9186AA5">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 16:15:53 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VLR_CORRETAGEM" id="9E0C42E3-5DC6-57CB-277A-0A4A78C11400">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:15:42 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF_CNPJ_COMP" id="5C7E2815-DA63-AE19-254E-1488135C8F98">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:15:42 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<delegate>DFA84B07-ED2D-6086-9D10-B0CDAEF7BE6A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5762DB10-ECFF-72B9-FA57-10ECAF8B5AD5" referredColumn="DFA84B07-ED2D-6086-9D10-B0CDAEF7BE6A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ABA0014-0CC5-FB31-A111-CA671A5EF726" name="NOTA_FISCAL_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:16:31 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF86B9C7-DF26-8C53-DAB7-09AFD4326D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B799787-D0F5-B816-2CE5-A21DF64BCB5A" name="NOTA_FISCAL_COMPRADOR_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:16:31 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C7E2815-DA63-AE19-254E-1488135C8F98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

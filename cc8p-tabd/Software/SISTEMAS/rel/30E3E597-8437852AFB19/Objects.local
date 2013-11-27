@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="0AB50E39-5223-9C4B-A2C7-8003B9AF9CB3" name="FATURAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="8F5598BC-ADD3-1C04-CADF-76A3ED2431BB" name="CLIENTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="9319BA28-E4B9-6C2E-CE22-578071B3560D" name="SOFTWARE" seqName="seg_0"/>
+   <object objectType="Table" objectID="E3662DC6-2FEA-4AC0-4B56-67F5374F5807" name="PEDIDO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6D71B142-7B86-6CE3-5A2B-63BDCB751E54" name="PEDIDO_FATURAMENTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BB3A139B-47D0-F9D3-D506-2DABC15FDB5D" name="PEDIDO_SOFTWARE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D88A913E-30E4-B64D-C676-8F55EB133D64" name="FATURAMENTO_CLIENTE_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

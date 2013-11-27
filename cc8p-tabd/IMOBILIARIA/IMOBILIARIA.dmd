@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="IMOBILIARIA" id="DAA3F089-15F2-A03A-2862-44601ECBA57C" version="3.5">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 14:49:54 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DAA3F089-15F2-A03A-2862-44601ECBA57C</designId>
+</OSDM_Design>

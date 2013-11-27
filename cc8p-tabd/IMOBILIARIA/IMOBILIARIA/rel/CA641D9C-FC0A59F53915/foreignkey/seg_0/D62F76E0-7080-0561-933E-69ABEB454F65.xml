@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D62F76E0-7080-0561-933E-69ABEB454F65" name="FATURAMENTO_COMPRADOR_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:30:33 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<containerWithKeyObject>3B71DFD0-44E3-E50C-7FC0-2606B265BC9E</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>D1DBB866-C837-74FB-7D98-5A1472C45008</localFKIndex>
+<keyObject>A6C6268F-7BA1-3019-6B4B-DF4F63F78676</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

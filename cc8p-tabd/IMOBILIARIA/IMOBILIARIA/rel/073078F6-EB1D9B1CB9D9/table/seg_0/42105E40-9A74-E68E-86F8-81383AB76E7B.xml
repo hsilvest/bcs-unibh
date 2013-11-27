@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42105E40-9A74-E68E-86F8-81383AB76E7B" name="TIPO_MOVEL">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:01:09 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_TIPO" id="A465A36B-1457-35DA-200E-9C06B48747A4">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:02:13 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_TIPO" id="AE7EC64A-4632-80DC-B33F-3B04171E23CB">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:02:13 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40DF3FF4-2FF6-A2C1-A0FD-B880D508B795" name="TIPO_MOVEL_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:02:35 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A465A36B-1457-35DA-200E-9C06B48747A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

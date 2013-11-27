@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4D409B1-A23E-30A2-A4F7-3C8B051D6ADA" name="FABRICANTE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:31:00 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_FABRICA" id="251DBA8A-5DC9-2AE9-3D80-0B51688E82C7">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:32:07 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_FABRICA" id="01E266F8-8E17-DFEA-5E41-A29C876F548C">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:32:07 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A9AE183-5811-ECBE-C045-463395BB5FA0" name="FABRICANTE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:32:07 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="251DBA8A-5DC9-2AE9-3D80-0B51688E82C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

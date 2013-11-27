@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="941C2906-32F9-E31E-9D93-7B4BC3260167" name="IMOVEL_TIPO_MOVEL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:03:35 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<containerWithKeyObject>C7E37FB5-8044-E20C-E600-6FC092174A92</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>D4872176-F99E-B9EA-8E9E-249C464AA67C</localFKIndex>
+<keyObject>40DF3FF4-2FF6-A2C1-A0FD-B880D508B795</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

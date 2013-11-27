@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A2F6524-11A9-7016-E458-1F08C3BD4226" name="LOCAL">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:26:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CIDADE" id="4CB60AF1-EFCD-5BC6-7253-6A1E82416CDC">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:26:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_CIDADE" id="F9D2B3D6-2002-7BAF-0B17-98371419A1BF">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:26:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ESTADO" id="F63937DC-A922-8C14-0E7A-78255603CA5B">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:26:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="C3AE67CF-EB3D-CEA6-F304-677ED526AED7">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:27:13 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92857294-9B10-D830-D462-08A00BF6F53E" name="CIDADE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:26:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CB60AF1-EFCD-5BC6-7253-6A1E82416CDC"/>
+<colUsage columnID="F63937DC-A922-8C14-0E7A-78255603CA5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

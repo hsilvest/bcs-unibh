@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32815440-E24A-DFEB-AFE3-B1404FDF7923" name="MEDICO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:33:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRM" id="3E168B8F-7EE1-4992-0E40-E3F3DE59F670">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:33:28 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_MEDICO" id="13B29616-F5A3-E262-F759-82FB919EEE40">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:33:28 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B89F194-B109-D6BA-B5E1-35D7AD990349" name="MEDICO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:33:28 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E168B8F-7EE1-4992-0E40-E3F3DE59F670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

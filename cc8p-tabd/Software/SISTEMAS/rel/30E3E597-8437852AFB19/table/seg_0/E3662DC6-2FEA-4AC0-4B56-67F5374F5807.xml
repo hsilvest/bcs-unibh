@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3662DC6-2FEA-4AC0-4B56-67F5374F5807" name="PEDIDO">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PEDIDO" id="64FADCE3-9D6B-C807-09EF-3C37BBC49EB9">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SOFTWARE" id="E60F58D0-9D39-B973-5525-0D54B0D0AF7D">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>93FF5678-E4D4-B91D-2A14-BB81C3A8C4A2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB3A139B-47D0-F9D3-D506-2DABC15FDB5D" referredColumn="93FF5678-E4D4-B91D-2A14-BB81C3A8C4A2"/>
+</associations>
+</Column>
+<Column name="COD_FABRICA" id="F2C9C278-2838-C179-7BB5-10CF192B914F">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:47:47 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9C21B18E-8C65-B92F-82A5-3BB03D05F8B9</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB3A139B-47D0-F9D3-D506-2DABC15FDB5D" referredColumn="9C21B18E-8C65-B92F-82A5-3BB03D05F8B9"/>
+</associations>
+</Column>
+<Column name="QTDE" id="D3ECE5CF-00CC-6921-B5D1-27B9C3B5ECA1">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NF" id="7984748B-934E-39A9-64F2-A3D3269CE432">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>59B363A4-7128-3E50-E600-5E2786911E61</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D71B142-7B86-6CE3-5A2B-63BDCB751E54" referredColumn="59B363A4-7128-3E50-E600-5E2786911E61"/>
+</associations>
+</Column>
+<Column name="VLR_UNITARIO" id="C3A72D7C-C77B-2D46-1038-D4ECE99E70EE">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38319E1E-D100-B7FA-944B-09559C798A90" name="PEDIDO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:42:55 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64FADCE3-9D6B-C807-09EF-3C37BBC49EB9"/>
+<colUsage columnID="E60F58D0-9D39-B973-5525-0D54B0D0AF7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEC010C0-06CC-F02E-E35B-333F7A741714" name="PEDIDO_SOFTWARE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:48:32 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E60F58D0-9D39-B973-5525-0D54B0D0AF7D"/>
+<colUsage columnID="F2C9C278-2838-C179-7BB5-10CF192B914F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07EBB079-C013-3BAA-C119-C97CC529E0DB" name="PEDIDO_FATURAMENTO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:28 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7984748B-934E-39A9-64F2-A3D3269CE432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

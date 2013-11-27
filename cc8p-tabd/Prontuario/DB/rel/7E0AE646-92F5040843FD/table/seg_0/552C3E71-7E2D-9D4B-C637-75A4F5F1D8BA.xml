@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="552C3E71-7E2D-9D4B-C637-75A4F5F1D8BA" name="PACIENTE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:06:08 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PACIENTE" id="9E5A8142-411A-0F13-BC0C-CF02A93D7986">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:11:00 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PACIENTE" id="BB1ADE3F-02E0-1598-8FE6-30E06295962D">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:11:00 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="146C1DEB-1DE0-FF37-F874-174B1E7ABDDD" name="PACIENTE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:11:09 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E5A8142-411A-0F13-BC0C-CF02A93D7986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

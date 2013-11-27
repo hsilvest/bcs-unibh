@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="552C3E71-7E2D-9D4B-C637-75A4F5F1D8BA" name="PACIENTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="ABCB6D33-00E2-0780-8EF6-05E44E21D05F" name="MEDICAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="B56D61B0-79A0-2B30-E1C3-5196178FE005" name="PROC" seqName="seg_0"/>
+   <object objectType="Table" objectID="D97F29DE-FC1E-7CA3-3CD6-AEB44BCA96CC" name="MEDICO" seqName="seg_0"/>
+   <object objectType="Table" objectID="E07B1697-8715-92D1-57DA-DB9904E32850" name="PLANO_SAUDE" seqName="seg_0"/>
+   <object objectType="Table" objectID="EA42B501-27A0-DADA-1EF9-791C1BA73358" name="PERIODO" seqName="seg_0"/>
+   <object objectType="Table" objectID="F545E4D0-1060-7796-BB77-71A1646AC48F" name="EXAME" seqName="seg_0"/>
+   <object objectType="Table" objectID="FD3D4691-6677-5924-7BEE-A0FE4EC0C565" name="CONSULTA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="070C8D95-1A74-8D2F-FD2D-32F3736E209A" name="CONSULTA_PLANO_SAUDE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3AA4E186-41A2-0496-082C-27B4AF73E0A9" name="CONSULTA_MEDICO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="54BE8383-4BBC-3FF8-EAB1-3FB2175E6474" name="CONSULTA_MEDICAMENTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6603D651-2F24-A731-A48E-90E4F83008E8" name="CONSULTA_EXAME_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A693811F-C4EA-7738-5463-9A31E1CC89A2" name="CONSULTA_PACIENTE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BB29F38D-EA19-0C15-00C0-8F0BB924E19B" name="CONSULTA_PROC_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F0A3666E-9E95-F491-D765-CD876193FF1E" name="CONSULTA_PERIODO_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

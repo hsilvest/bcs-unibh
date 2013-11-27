@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0AB50E39-5223-9C4B-A2C7-8003B9AF9CB3" name="FATURAMENTO">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NF" id="59B363A4-7128-3E50-E600-5E2786911E61">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA" id="9ECC3C70-3227-099D-EBEB-29BF3390CAE8">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VLR_TOTAL" id="54399D12-F451-64DD-572A-737D6DA6177C">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPOSTO" id="3D967696-66C1-44C5-35C7-04D935AA0851">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TX_IMP" id="4F89C5E0-D3D3-74D3-248B-23537444183F">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MATRIZ" id="0D803A87-33A5-969A-78C4-FF856EB12220">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F8EF7782-25AF-70D7-B613-2E18E70AC7DB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D88A913E-30E4-B64D-C676-8F55EB133D64" referredColumn="F8EF7782-25AF-70D7-B613-2E18E70AC7DB"/>
+</associations>
+</Column>
+<Column name="COD_FILIAL" id="BC73FE9B-4EFE-C322-5BB1-291A917E08EC">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:51:51 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>51142BE7-3650-8E82-5983-58975DE5D108</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D88A913E-30E4-B64D-C676-8F55EB133D64" referredColumn="51142BE7-3650-8E82-5983-58975DE5D108"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1BD38BD-4384-351E-E36D-B480C7BDB33B" name="FATURAMENTO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:49:06 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59B363A4-7128-3E50-E600-5E2786911E61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B009E763-A708-C1DD-1759-B2304BDED0A5" name="FATURAMENTO_CLIENTE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:52:59 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D803A87-33A5-969A-78C4-FF856EB12220"/>
+<colUsage columnID="BC73FE9B-4EFE-C322-5BB1-291A917E08EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4101B17-A723-E340-B03C-237A6C8801CF" name="IMOVEL">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_IMOVEL" id="0F1F8D9B-829E-5BBB-B8FE-02B77A8D4AF4">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTD_QUARTOS" id="48EDA242-0CC9-6D0B-67D9-A638213FA3AC">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAMANHO" id="227FCC8D-5C79-82E7-E7B6-1DF7BF06FE8E">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ELEVADOR" id="B02D5D04-79FC-CDAC-57EC-E09B4F098B0D">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_EMPREGADA" id="CE48530B-F779-E1D2-18C7-06714253D730">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GARAGEM" id="FD328A37-D906-1E2C-0A52-696D4E6F6622">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="734BAF48-E21E-8292-5FD4-7E392DEA18F0">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TIPO" id="B0570D6F-00B5-A60F-FE4B-31B8732823ED">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_TIPO" id="0701DD1E-9696-4E54-B894-ED651D12E46A">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:25:22 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOGRADOURO" id="68AB5F68-E9A4-AD64-ABED-109008758999">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="DB83AAAD-5B2E-FA9D-4508-14706E053EF1">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPLEMENTO" id="3D9D8C7A-F2FA-F1E4-1AEB-CC48986F7EC2">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CIDADE" id="B435A789-42D0-9773-8FB5-081BF7B79624">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>4CB60AF1-EFCD-5BC6-7253-6A1E82416CDC</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88A24B13-033F-9686-5CA2-01EE6C297E4E" referredColumn="4CB60AF1-EFCD-5BC6-7253-6A1E82416CDC"/>
+</associations>
+</Column>
+<Column name="COD_ESTADO" id="24DC2EEC-89FA-4040-EDD9-053064CCEFBC">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 16:13:18 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F63937DC-A922-8C14-0E7A-78255603CA5B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88A24B13-033F-9686-5CA2-01EE6C297E4E" referredColumn="F63937DC-A922-8C14-0E7A-78255603CA5B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4216F85-B068-7C12-4C0D-B25CA008DE19" name="IMOVEL_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:23:20 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F1F8D9B-829E-5BBB-B8FE-02B77A8D4AF4"/>
+<colUsage columnID="B0570D6F-00B5-A60F-FE4B-31B8732823ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="581B6E98-6A49-282E-05C2-06128DA1B0E2" name="IMOVEL_LOCAL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 16:14:09 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B435A789-42D0-9773-8FB5-081BF7B79624"/>
+<colUsage columnID="24DC2EEC-89FA-4040-EDD9-053064CCEFBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E07B1697-8715-92D1-57DA-DB9904E32850" name="PLANO_SAUDE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:11:35 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PLANO" id="935E887A-F578-28FB-3696-B875FFC37C88">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:12:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PLANO" id="15A357A8-9FFD-D7F3-E33F-C0DF74EFA207">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:12:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_TIPO_PLANO" id="48D16193-43D6-CB63-374C-2B61DCBFB10A">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:12:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49E75864-1F40-4D19-5446-CAF2F71E9BC3" name="PLANO_SAUDE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:12:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="935E887A-F578-28FB-3696-B875FFC37C88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="42105E40-9A74-E68E-86F8-81383AB76E7B" name="TIPO_MOVEL" seqName="seg_0"/>
+   <object objectType="Table" objectID="44523208-7869-DDEF-4EDE-DFE19A4DDB60" name="NOTA_FISCAL" seqName="seg_0"/>
+   <object objectType="Table" objectID="5E3C9FE4-1857-75A1-0D91-36A7F90B9DC1" name="COMPRADOR" seqName="seg_0"/>
+   <object objectType="Table" objectID="A9BC5D58-E6A6-27CB-A09E-5A29B95A61C1" name="ESTADO" seqName="seg_0"/>
+   <object objectType="Table" objectID="ADEC0031-69FB-8226-CF5F-D638D25D156D" name="IMOVEIS_NOTA" seqName="seg_0"/>
+   <object objectType="Table" objectID="C7E37FB5-8044-E20C-E600-6FC092174A92" name="IMOVEL" seqName="seg_0"/>
+   <object objectType="Table" objectID="DF3D0C82-A07F-21BF-E7F7-41BF02D1B8AC" name="CIDADE" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0401D0F8-D82B-A614-A137-E8F9DC12E5C0" name="CIDADE_ESTADO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0D313F1D-849D-420B-37D9-6C9F5C54C1A2" name="IMOVEL_CIDADE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4776660A-9A8B-9471-F045-09844F7F59F2" name="IMOVEIS_NOTA_NOTA_FISCAL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5762DB10-ECFF-72B9-FA57-10ECAF8B5AD5" name="NOTA_FISCAL_COMPRADOR_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="941C2906-32F9-E31E-9D93-7B4BC3260167" name="IMOVEL_TIPO_MOVEL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DD01C93B-AB65-1CA1-183B-5E7DDE9FF78C" name="IMOVEIS_NOTA_IMOVEL_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

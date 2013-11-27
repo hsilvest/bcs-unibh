@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADEC0031-69FB-8226-CF5F-D638D25D156D" name="IMOVEIS_NOTA">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:19:06 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NF" id="74B3B8CF-71F1-F664-EC77-B24C542B8041">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:20:32 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FF86B9C7-DF26-8C53-DAB7-09AFD4326D5C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4776660A-9A8B-9471-F045-09844F7F59F2" referredColumn="FF86B9C7-DF26-8C53-DAB7-09AFD4326D5C"/>
+</associations>
+</Column>
+<Column name="COD_IMOVEL" id="BB641BFE-5E30-4DA9-F452-79866625A521">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:20:32 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5F2F1A4B-09C6-2FAC-3220-AE478D016D10</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD01C93B-AB65-1CA1-183B-5E7DDE9FF78C" referredColumn="5F2F1A4B-09C6-2FAC-3220-AE478D016D10"/>
+</associations>
+</Column>
+<Column name="VLR_IMOVEL" id="B1732024-755E-76C1-0871-D81D581E38AE">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:20:32 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC1633FE-734B-9B43-95CA-2A61D6FDDF74" name="IMOVEIS_NOTA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:20:32 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74B3B8CF-71F1-F664-EC77-B24C542B8041"/>
+<colUsage columnID="BB641BFE-5E30-4DA9-F452-79866625A521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C92BF4A0-EF44-0456-2668-10F918CD8DB9" name="IMOVEIS_NOTA_IMOVEL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:21:31 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB641BFE-5E30-4DA9-F452-79866625A521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5CB8B8A-249F-7811-6A41-086BAD19726F" name="IMOVEIS_NOTA_NOTA_FISCAL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:21:31 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74B3B8CF-71F1-F664-EC77-B24C542B8041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

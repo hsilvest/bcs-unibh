@@ -1,0 +1,81 @@
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csprojResolveAssemblyReference.cache
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csproj.GenerateResource.Cache
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csproj.GenerateResource.Cache
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.AboutBox1.resources
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Henrique\Documents\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Henrique\Documents\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.AboutBox1.resources
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Henrique\Documents\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csproj.GenerateResource.Cache
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.AboutBox1.resources
+C:\Users\Pedro\Desktop\Analisador\Analisadores\Analisadores\obj\x86\Debug\Analisadores.AboutBox1.resources
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\bin\Debug\Analisadores.exe.manifest
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\bin\Debug\Analisadores.application
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe.manifest
+C:\Users\Henrique\Downloads\Analisadores\Analisadores\obj\x86\Debug\Analisadores.application
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.exe
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.pdb
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\bin\Debug\Analisadores.exe.manifest
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\bin\Debug\Analisadores.application
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\bin\Debug\Analisadores.exe
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\bin\Debug\Analisadores.pdb
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.csprojResolveAssemblyReference.cache
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.AboutBox1.resources
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.csproj.GenerateResource.Cache
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.exe.manifest
+D:\Pessoal\Faculdade\bcc-unibh\cc7p-comp\Trabalhos\TP1\Entrega\Fonte\Analisadores\obj\x86\Debug\Analisadores.application

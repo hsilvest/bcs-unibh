@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6100225-BDC6-A73B-9C0A-12B2BD4824C3" name="CONSULTA">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:31:45 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CONSULTA" id="001ACB67-A233-149B-A92F-570AEA91E9AD">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:32:15 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA" id="B177B0E6-3875-2280-E01C-0883A998E7EB">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:32:15 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PACIENTE" id="3DE71893-0D4F-4FB6-21E9-F923E677C5D6">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:58:42 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9783772D-74BA-EEA8-8803-6036277E00A4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9881F4BD-3ACF-5FB8-C269-04FC4A9DC8D7" referredColumn="9783772D-74BA-EEA8-8803-6036277E00A4"/>
+</associations>
+</Column>
+<Column name="CRM" id="D1DDB5C4-8DDD-442D-AEB3-2A50584039D9">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:32:15 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8496B527-0EFB-0836-1CD4-964E5547DBD4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3A4E378-8EE3-71AE-BE3E-80130ADFC3CF" referredColumn="8496B527-0EFB-0836-1CD4-964E5547DBD4"/>
+</associations>
+</Column>
+<Column name="COD_ESPECIALIDADE" id="07EDE2DE-171D-ED06-7D02-4EAB9C412C13">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:32:15 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>E50864B5-0364-8CA6-1EF3-18B7D1677F6F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3A4E378-8EE3-71AE-BE3E-80130ADFC3CF" referredColumn="E50864B5-0364-8CA6-1EF3-18B7D1677F6F"/>
+</associations>
+</Column>
+<Column name="DESC_SINTOMAS" id="0949F7E8-29F2-A196-8831-514B610A7DED">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:52:44 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_DIAGNOSTICO" id="A9576063-486C-987B-5340-A90A2CD4480F">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:52:44 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78DACEF7-5191-92F9-0669-D5DA846CAE48" name="CONSULTA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:50:50 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="001ACB67-A233-149B-A92F-570AEA91E9AD"/>
+<colUsage columnID="B177B0E6-3875-2280-E01C-0883A998E7EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="521E0667-F2C9-3FBC-F974-6E8A236AC5E4" name="CONSULTA_MEDICO_ESPEC_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:53:53 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1DDB5C4-8DDD-442D-AEB3-2A50584039D9"/>
+<colUsage columnID="07EDE2DE-171D-ED06-7D02-4EAB9C412C13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82C753A4-4440-9F56-7FF3-B914DB310375" name="CONSULTA_PACIENTE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:00:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DE71893-0D4F-4FB6-21E9-F923E677C5D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

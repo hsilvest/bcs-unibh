@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74AA128C-16A5-403B-19D3-FC2EEE5D5E43" name="MEDICAMENTO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:39:32 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_MEDICAMENTO" id="34EB1583-315A-7CBE-D429-74FBB14EF1CC">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:40:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_MEDICAMENTO" id="A52902D6-07F8-0DDE-F529-673F9D00A19D">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:40:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VLR_MEDICAMENTO" id="4D913EA7-C47A-ED17-6D21-2570C5211D91">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:40:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16A32CBB-30C0-FD9A-FFD2-B68350DB8020" name="MEDICAMENTO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:40:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34EB1583-315A-7CBE-D429-74FBB14EF1CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B56D61B0-79A0-2B30-E1C3-5196178FE005" name="PROC">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:13:24 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PROC" id="286133FB-54EA-461B-2CE1-D4B3EE4E47F1">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:14:18 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_PROC" id="A3BB5813-7EFE-F15A-241E-B7D4FFD04005">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:14:18 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VLR_PROC" id="AC605E89-81DD-68FE-CDC5-B638392F697F">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:14:18 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0259FCE0-06C4-8861-647A-FA139B0783F4" name="PROC_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:14:18 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="286133FB-54EA-461B-2CE1-D4B3EE4E47F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

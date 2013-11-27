@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF3D0C82-A07F-21BF-E7F7-41BF02D1B8AC" name="CIDADE">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:06:00 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CIDADE" id="51889BCB-1D0D-49C6-8FB8-BB8930005E8F">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:07:23 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_CIDADE" id="F05C1F99-E6C6-320F-356E-913C799EF74B">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:07:23 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ESTADO" id="B5C37182-63A7-1BD4-86C1-2B0D6C5F9786">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:07:23 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>51FF4743-B5AA-5DDF-ED94-AB9CDA1E7857</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0401D0F8-D82B-A614-A137-E8F9DC12E5C0" referredColumn="51FF4743-B5AA-5DDF-ED94-AB9CDA1E7857"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2245B890-5BB8-C38B-64C7-8330FD16760D" name="CIDADE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:07:45 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51889BCB-1D0D-49C6-8FB8-BB8930005E8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83E0DD7C-09DC-10E0-3270-9B1F8CD9FC35" name="CIDADE_ESTADO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:08:13 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5C37182-63A7-1BD4-86C1-2B0D6C5F9786"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

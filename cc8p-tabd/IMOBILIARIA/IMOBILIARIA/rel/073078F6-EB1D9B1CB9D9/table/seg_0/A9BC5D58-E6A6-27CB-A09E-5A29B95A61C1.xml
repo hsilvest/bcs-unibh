@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9BC5D58-E6A6-27CB-A09E-5A29B95A61C1" name="ESTADO">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:03:53 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ESTADO" id="51FF4743-B5AA-5DDF-ED94-AB9CDA1E7857">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:05:47 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="BB74B547-0F49-C8FE-F3D8-CE51A2843F95">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:05:47 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17051E52-259E-F287-C5A1-F3620A618BD7" name="ESTADO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:05:47 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51FF4743-B5AA-5DDF-ED94-AB9CDA1E7857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

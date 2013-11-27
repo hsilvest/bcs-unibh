@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.mathworks.com/help/stats/kmeans.html -->
+<html itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./K-means clustering - MATLAB kmeans_files/widget113.css" media="all">
+<meta charset="utf-8">
+<title>K-means clustering - MATLAB kmeans</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="./K-means clustering - MATLAB kmeans_files/reset.css" rel="stylesheet" type="text/css">
+<link href="./K-means clustering - MATLAB kmeans_files/960.css" rel="stylesheet" type="text/css">
+<link href="./K-means clustering - MATLAB kmeans_files/site5.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/site5_ie6.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/site5_ie7.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/site5_ie8.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/site5_ie9.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="http://www.mathworks.com/includes_content/nextgen/css/doc_center/doc_center.css?20130417">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie6.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie7.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie8.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie9.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/jquery-latest.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/jquery.hover-intent.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/localnav.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/global.js"></script>
+<script type="text/javascript" language="JavaScript1.3">var domain = "com";</script>
+<link rel="stylesheet" href="./K-means clustering - MATLAB kmeans_files/docstyle.css" type="text/css"><meta name="chunktype" content="refpage"><meta name="refentity" itemprop="refentity" content="function:kmeans">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="fcn">
+<meta name="infotype" itemprop="infotype" content="ref/function">
+<meta name="description" itemprop="description" content="This MATLAB function partitions the points in the n-by-p data matrix X into k clusters.">
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/docscripts.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/mw.toc.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/mw.imagescaling.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/mw.imageanimation.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/mw.breadcrumb.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/jquery.highlight.js"></script>
+<link href="./K-means clustering - MATLAB kmeans_files/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<!-- Additions/overrides from the doc side -->
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/docsearch.js"></script>
+<script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/jquery.toggleval.js"></script>
+<!-- CUSTOM CSS -->
+<style>
+.fat_footer { padding:0px; }
+.fat_footer a:link, .fat_footer a:visited { color:#005fce; }
+.fat_footer .callout_container { margin-left:5px; font-size:1.0em; border:none; }
+.fat_footer .callout_container.rounded { border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; }
+.fat_footer .callout_container.gradient { background:transparent none; }
+.fat_footer .callout_content { min-height:45px; padding-top:10px; }
+</style>
+<div style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;" id="_atssh"><iframe id="_atssh342" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./K-means clustering - MATLAB kmeans_files/sh114.htm"></iframe></div><script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/core074.js"></script></head> <body id="nextgen_b-dc" class="adjusted_template">
+    <div class="container_192">
+      <div class="grid_192">
+        <div class="page_container">
+          <div class="grid_192"><div class="header_container">
+<div class="headernav">
+<ul>
+<li class="headernav_country rollover_delay inactive_state"><a href="http://www.mathworks.com/company/worldwide/">United States</a>
+<div class="countrynav_container gradient shadow">
+<ul>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.com" rel="nofollow">United States</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.com" rel="nofollow">Canada</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.com.au" rel="nofollow">Australia</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.de" rel="nofollow">Österreich</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.nl" rel="nofollow">Belgium</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.cn" rel="nofollow">中国</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.se" rel="nofollow">Denmark</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.se" rel="nofollow">Finland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.fr" rel="nofollow">France</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.de" rel="nofollow">Deutschland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.in" rel="nofollow">India</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.co.uk" rel="nofollow">Ireland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.it" rel="nofollow">Italia</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.co.jp" rel="nofollow">日本</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.co.kr" rel="nofollow">한국</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.nl" rel="nofollow">Luxembourg</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.nl" rel="nofollow">Netherlands</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.com.au" rel="nofollow">New Zealand</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.se" rel="nofollow">Norway</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.com" rel="nofollow">Portugal</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.es" rel="nofollow">España</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.se" rel="nofollow">Sweden</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.ch" rel="nofollow">Schweiz / Suisse</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fstats%2Fkmeans.html&domain=mathworks.co.uk" rel="nofollow">United Kingdom</a></li>
+<li><a href="http://www.mathworks.com/company/worldwide/">All Other Countries</a></li>
+</ul>
+</div>
+</li>
+<li class="headernav_contact"><a href="http://www.mathworks.com/company/aboutus/contact_us/">Contact Us</a></li>
+<li class="headernav_store"><a href="http://www.mathworks.com/store/default.do?s_cid=store_top_nav">Store</a></li>
+<li class="headernav_search"><form name="search" id="site_search" class="site_search" action="http://www.mathworks.com/searchresults/" method="get">
+<input type="hidden" name="c[]" value="entiresite">
+<input type="text" name="q" id="query" class="textfield">
+<input type="submit" id="searchbutton" value="Search" class="submit_go">
+</form></li>
+</ul>
+</div>
+<div class="mwa-nav">
+<ul>
+<li class="mwa-nav_name"><a href="https://www.mathworks.com/accesslogin/editProfile.do">Euzébio souza</a></li>
+<li class="mwa-nav_account"><a href="https://www.mathworks.com/accesslogin/myAccount.do">My Account</a></li>
+<li class="mwa-nav_logout"><a href="https://www.mathworks.com/accesslogin/logout.do?uri=http://www.mathworks.com/help/stats/kmeans.html" id="mwa-log_out">Log Out</a></li>
+</ul>
+</div>
+<div class="logo_container">
+<a href="http://www.mathworks.com/index.html"><img src="./K-means clustering - MATLAB kmeans_files/bg_header_mwlogo_notag.jpg" alt="MathWorks" class="mw_logo"></a>
+<p class="tagline">Accelerating the pace of engineering and science</p>
+</div>
+</div></div>
+          <div class="grid_192"> <div class="topnav_container">
+<div class="topnav_frame">
+<div class="topnav">
+<ul>
+<li class="topnav_products "><a href="http://www.mathworks.com/products/">Products &amp; Services</a></li>
+<li class="topnav_solutions "><a href="http://www.mathworks.com/solutions/">Solutions</a></li>
+<li class="topnav_academia "><a href="http://www.mathworks.com/academia/">Academia</a></li>
+<li class="topnav_support "><a href="http://www.mathworks.com/support/">Support</a></li>
+<li class="topnav_community "><a href="http://www.mathworks.com/matlabcentral/">User Community</a></li>
+<li class="topnav_events "><a href="http://www.mathworks.com/company/events/">Events</a></li>
+<li class="topnav_company "><a href="http://www.mathworks.com/company/">Company</a></li>
+</ul>
+</div>
+</div>
+</div> </div>
+          <div class="grid_192">        <div class="section_image level_3" style="background-color:#04478b; background-image:url(/images/nextgen/global/bg_banner_wide.jpg);
+        ">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+          <td>                <h1>Documentation Center</h1>
+</td>
+<td class="ctabox_container"><ul class="ctabox rounded_corner">
+  <li><a href="http://www.mathworks.com/programs/bounce/doc_tryit.html" class="trial" target="">Trial Software</a></li>
+  <li><a href="http://www.mathworks.com/support/web_downloads_bounce.html?s_cid=1008_degr_docdn_270055" class="update" target="">Product Updates</a></li>
+  <li class="banner_share">
+    <div class="addthis_toolbox addthis_default_style"> <a href="http://www.addthis.com/bookmark.php?v=250&pubid=mathworks" class="addthis_button_compact at300m"><span class="at300bs at15nc at15t_compact"></span>Share</a>
+      <div class="atclear"></div>
+      
+    <div class="atclear"></div></div>
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":true, "services_compact":"facebook,email,twitter,print,linkedin,favorites,google_plusone_share,more", "ui_open_windows":true, "ui_header_color":"#ffffff", "ui_header_background":"#3F74C1", "ui_cobrand":"MathWorks","data_track_clickback":true, ui_language: "en" };</script> 
+    <script type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/addthis_widget.js"></script> 
+  </li>
+  </ul>
+ </td>
+        </tr>
+          </tbody></table>
+    </div>
+</div>
+          <div class="content_frame">
+            <div class="grid_192">
+              <div class="site_container site_toc_closed">
+                <div class="toc_pane"><div xmlns:atict="http://www.arbortext.com/namespace/atict" class="toc_pane">&nbsp;
+<div class="toc_container_wrapper" tabindex="0" style="display: block; height: 754px; max-height: 754px; top: 10px; position: fixed;">
+<div class="toc_header">
+<div class="toc_icon" id="toc.stats">
+
+</div>
+<h3>Contents</h3>
+</div><!--close_toc_header-->
+<div class="toc_container" style="height: 717px; max-height: 717px;">
+<!--BEGINNING OF TOC DATA-->
+<div class="toc_doc_center_home">
+<a href="http://www.mathworks.com/help/documentation-center.html">Documentation Center</a>
+</div>
+<ul>
+<li id="stats.index.html" class="toc_expanded"><div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html" class="corrected_url">Statistics Toolbox</a></div>
+</div>
+<ul>
+<li id="stats.getting-started-12.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/getting-started-12.html" class="corrected_url">Getting Started with Statistics Toolbox</a></div>
+</div>
+</li><li id="stats.examples.index.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/examples/index.html" class="corrected_url">Examples</a></div></div></li><li id="stats.release-notes.html">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper">
+<a href="http://www.mathworks.com/help/stats/release-notes.html" class="corrected_url">Release Notes</a></div>
+</div>
+</li>
+<li id="stats.functionlist.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/functionlist.html" class="corrected_url">MATLAB Functions</a></div></div></li><li id="stats.classeslist.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/classeslist.html" class="corrected_url">Classes</a></div></div></li><li id="stats.index.html.1" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#data-organization" class="corrected_url">Exploratory Data Analysis</a></div>
+</div>
+<ul>
+<li id="stats.data-import-and-export-1.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/data-import-and-export-1.html" class="corrected_url">Data Import and Export</a></div>
+</div>
+</li><li id="stats.data-types-1.html.1" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/data-types-1.html" class="corrected_url">Data Types</a></div>
+</div>
+</li><li id="stats.descriptive-statistics.html.2" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/descriptive-statistics.html" class="corrected_url">Descriptive Statistics</a></div>
+</div>
+</li><li id="stats.statistical-visualization.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/statistical-visualization.html" class="corrected_url">Statistical Visualization</a></div>
+</div>
+</li><li id="stats.cluster-analysis.html.4" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/cluster-analysis.html" class="corrected_url">Cluster Analysis</a></div>
+</div>
+<ul>
+<li id="stats.hierarchical-clustering-12.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/hierarchical-clustering-12.html" class="corrected_url">Hierarchical Clustering</a></div>
+</div>
+</li><li id="stats.k-means-clustering-12.html.1" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/k-means-clustering-12.html" class="corrected_url">k-Means Clustering</a></div>
+</div>
+<ul>
+<li class="toc_expanded"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Functions</div></div><ul>
+<li id="stats.kmeans.html" class="current_page"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="./K-means clustering - MATLAB kmeans_files/K-means clustering - MATLAB kmeans.htm" class="corrected_url">kmeans</a></div></div></li>
+<li id="stats.mahal.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/mahal.html" class="corrected_url">mahal</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Examples and How To</div></div><ul>
+<li id="stats.k-means-clustering.html#brah7fp-1"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/k-means-clustering.html#brah7fp-1" class="corrected_url">Create Clusters and Determine Separation</a></div></div></li>
+<li id="stats.k-means-clustering.html#brah7f1-1"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/k-means-clustering.html#brah7f1-1" class="corrected_url">Determine the Correct Number of Clusters</a></div></div></li>
+<li id="stats.k-means-clustering.html#brah7f_-1"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/k-means-clustering.html#brah7f_-1" class="corrected_url">Avoid Local Minima</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Concepts</div></div><ul>
+<li id="stats.introduction-to-cluster-analysis.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/introduction-to-cluster-analysis.html" class="corrected_url">Introduction to Cluster Analysis</a></div></div></li>
+<li id="stats.k-means-clustering.html#bq_679x-19"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/k-means-clustering.html#bq_679x-19" class="corrected_url">Introduction to k-Means Clustering</a></div></div></li>
+</ul>
+</li>
+</ul>
+</li><li id="stats.cluster-plots.html.2" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/cluster-plots.html" class="corrected_url">Cluster Plots</a></div>
+</div>
+</li><li id="stats.gaussian-mixture-models-2.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/gaussian-mixture-models-2.html" class="corrected_url">Gaussian Mixture Models</a></div>
+</div>
+</li></ul>
+</li></ul>
+</li><li id="stats.index.html.2" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#probability-distributions" class="corrected_url">Probability Distributions</a></div>
+</div>
+</li><li id="stats.index.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#hypothesis-tests" class="corrected_url">Hypothesis Tests</a></div>
+</div>
+</li><li id="stats.index.html.4" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#predictive-modeling" class="corrected_url">Regression and ANOVA</a></div>
+</div>
+</li><li id="stats.index.html.5" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#btq_uq5" class="corrected_url">Machine Learning</a></div>
+</div>
+</li><li id="stats.index.html.6" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#multivariate-methods" class="corrected_url">Multivariate Data Analysis</a></div>
+</div>
+</li><li id="stats.index.html.7" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/index.html#design-of-experiments-doe-and-statistical-process-control" class="corrected_url">Industrial Statistics</a></div>
+</div>
+</li><li id="stats.speed-up-statistical-computations.html.8" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/stats/speed-up-statistical-computations.html" class="corrected_url">Speed Up Statistical Computations</a></div>
+</div>
+</li></ul>
+</li>
+</ul>
+<!--END OF TOC DATA-->
+</div><!--close_toc_container-->
+</div><!--close_toc_container_wrapper-->
+</div><!--close_toc_pane-->
+</div><!--close_toc_pane-->
+                <div class="doc_content_container">
+                  <div class="content_container" id="content_container"> 
+
+    
+    
+    
+    
+    
+    
+
+	
+    
+    
+               
+ 
+            
+<div class="docsearch_container">
+<form id="docsearch_form" name="docsearch_form" method="get" action="http://www.mathworks.com/help/search/doccenter/en/R2013a">
+<label for="docsearch" class="hidden">Search MATLAB Documentation</label>
+<input type="text" name="qdoc" id="docsearch" class="textfield toggleval" autocomplete="off" value="Search R2013a Documentation">
+<input type="submit" name="submitsearch" id="submitsearch" value="Search" class="docsearch_submit" disabled="">
+<script type="text/javascript">
+         $("input[name='qdoc']").toggleVal({
+            focusClass: "hasFocus"
+         });
+       </script>
+</form>
+</div>
+<div class="breadcrumb_container">
+<div class="breadcrumbs">
+<div class="breadcrumbs_outer"><div class="breadcrumbs_inner"><ul><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_first"><a href="http://www.mathworks.com/help/documentation-center.html" itemprop="url"><span itemprop="title">R2013a</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_product"><a href="http://www.mathworks.com/help/stats/index.html" itemprop="url"><span itemprop="title">Statistics Toolbox</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="http://www.mathworks.com/help/stats/index.html#data-organization" itemprop="url"><span itemprop="title">Exploratory Data Analysis</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="http://www.mathworks.com/help/stats/cluster-analysis.html" itemprop="url"><span itemprop="title">Cluster Analysis</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_last"><a href="http://www.mathworks.com/help/stats/k-means-clustering-12.html" itemprop="url"><span itemprop="title">k-Means Clustering</span></a></li>
+</ul></div></div></div>
+</div>
+
+<section id="doc_center_content">
+<a name="f3883830"></a><a class="indexterm" name="zmw57dd0e156815"></a><div itemprop="content"><h1 class="r2013a" itemprop="title">kmeans</h1><!-- SYNCHTO: _bqzigzm-1.html --><div class="doc_topic_desc"><p itemprop="purpose"><i>K</i>-means clustering</p></div></div>
+<h2 id="syntax">Syntax</h2><div class="syntax_signature"><p class="synopsis"><tt>IDX = kmeans(X,k)<br>[IDX,C] = kmeans(X,k)<br>[IDX,C,sumd] = kmeans(X,k)<br>[IDX,C,sumd,D] = kmeans(X,k)<br>[...] = kmeans(...,<i><tt>param1</tt></i>,<i><tt>val1</tt></i>,<i><tt>param2</tt></i>,<i><tt>val2</tt></i>,...)<br></tt></p></div><div class="clear"></div><div itemprop="content"><a name="f3883839"></a><h2>Description</h2><p><span itemprop="syntax"><tt><a name="f3883840"></a>IDX = kmeans(X,k)</tt></span> partitions
+the points in the <tt>n</tt>-by-<tt>p</tt> data
+matrix <tt>X</tt> into <tt>k</tt> clusters. This
+iterative partitioning minimizes the sum, over all clusters, of the
+within-cluster sums of point-to-cluster-centroid distances. Rows of <tt>X</tt> correspond
+to points, columns correspond to variables. <tt>kmeans</tt> returns
+an <tt>n</tt>-by-<tt>1</tt> vector <tt>IDX</tt> containing
+the cluster indices of each point. By default, <tt>kmeans</tt> uses
+squared Euclidean distances. When <tt>X</tt> is a vector, <tt>kmeans</tt> treats
+it as an <i>n</i>-by-1 data matrix, regardless of its
+orientation.</p><p><span itemprop="syntax"><tt><a name="f4344836"></a>[IDX,C] = kmeans(X,k)</tt></span> returns
+the <tt>k</tt> cluster centroid locations in the <tt>k</tt>-by-<tt>p</tt> matrix <tt>C</tt>.</p><p><span itemprop="syntax"><tt><a name="f3883844"></a>[IDX,C,sumd] = kmeans(X,k)</tt></span> returns
+the within-cluster sums of point-to-centroid distances in the <tt>1</tt>-by-<tt>k</tt> vector <tt>sumd</tt>.</p><p><span itemprop="syntax"><tt><a name="f3883846"></a>[IDX,C,sumd,D] = kmeans(X,k)</tt></span> returns
+distances from each point to every centroid in the <tt>n</tt>-by-<tt>k</tt> matrix <tt>D</tt>.</p><p><span itemprop="syntax"><tt><a name="f3883848"></a>[...] = kmeans(...,<i><tt>param1</tt></i>,<i><tt>val1</tt></i>,<i><tt>param2</tt></i>,<i><tt>val2</tt></i>,...)</tt></span> enables
+you to specify optional parameter/value pairs to control the iterative
+algorithm used by <tt>kmeans</tt>. Valid parameter strings
+are listed in the following table.</p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="25%"><col width="25%"><col width="50%"></colgroup><thead><tr valign="top"><th bgcolor="#B2B2B2">Parameter</th><th bgcolor="#B2B2B2" colspan="2">Value</th></tr>
+</thead><tbody><tr valign="top"><td bgcolor="#F2F2F2"><tt>'distance'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Distance measure, in <tt>p</tt>-dimensional
+space. <tt>kmeans</tt> minimizes with respect to this
+parameter. <tt>kmeans</tt> computes centroid clusters
+differently for the different supported distance measures.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2">&nbsp;</td><td bgcolor="#F2F2F2"><tt>'sqEuclidean'</tt></td><td bgcolor="#F2F2F2"><p>Squared Euclidean distance (default). Each centroid is
+the mean of the points in that cluster.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2">&nbsp;</td><td bgcolor="#F2F2F2"><tt>'cityblock'</tt></td><td bgcolor="#F2F2F2"><p>Sum of absolute differences, i.e., the L1 distance. Each
+centroid is the component-wise median of the points in that cluster.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2">&nbsp;</td><td bgcolor="#F2F2F2"><tt>'cosine'</tt></td><td bgcolor="#F2F2F2"><p>One minus the cosine of the included angle between points
+(treated as vectors). Each centroid is the mean of the points in that
+cluster, after normalizing those points to unit Euclidean length.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2">&nbsp;</td><td bgcolor="#F2F2F2"><tt>'correlation'</tt></td><td bgcolor="#F2F2F2"><p>One minus the sample correlation between points (treated
+as sequences of values). Each centroid is the component-wise mean
+of the points in that cluster, after centering and normalizing those
+points to zero mean and unit standard deviation.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2">&nbsp;</td><td bgcolor="#F2F2F2"><tt>'Hamming'</tt></td><td bgcolor="#F2F2F2"><p>Percentage of bits that differ (only suitable for binary
+data). Each centroid is the component-wise median of points in that
+cluster.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2" rowspan="4"><tt>'emptyaction'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Action to take if a cluster
+loses all its member observations.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'error'</tt></td><td bgcolor="#F2F2F2"><p>Treat an empty cluster as an error (default).</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'drop'</tt></td><td bgcolor="#F2F2F2"><p>Remove any clusters that become empty. <tt>kmeans</tt> sets
+the corresponding return values in <tt>C</tt> and <tt>D</tt> to <tt>NaN</tt>.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'singleton'</tt></td><td bgcolor="#F2F2F2"><p>Create a new cluster consisting of the one point furthest
+from its centroid.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2" rowspan="3"><tt>'onlinephase'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Flag indicating whether <tt>kmeans</tt> should
+perform an online update phase in addition to a batch update phase.
+The online phase can be time consuming for large data sets, but guarantees
+a solution that is a local minimum of the distance criterion, that
+is, a partition of the data where moving any single point to a different
+cluster increases the total sum of distances.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'on'</tt></td><td bgcolor="#F2F2F2"><p>Perform online update (default).</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'off'</tt></td><td bgcolor="#F2F2F2"><p>Do not perform online update.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2" rowspan="6"><tt>'options'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Structure specifying options
+for the iterative algorithm used to minimize the fitting criteria.
+Create the options structure with <a href="http://www.mathworks.com/help/stats/statset.html"><tt>statset</tt></a>.
+Applicable <tt>statset</tt> parameters are:</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>Display</tt></td><td bgcolor="#F2F2F2">Level of display output. Choices are <tt>‘off'</tt>(default), <tt>‘iter'</tt>,
+and <tt>‘final'</tt>.</td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>MaxIter</tt></td><td bgcolor="#F2F2F2">Maximum number of iterations allowed. The default is <tt>100</tt>.</td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>UseParallel</tt></td><td bgcolor="#F2F2F2">If <tt>true</tt> and if a <tt>matlabpool</tt> of
+the Parallel Computing Toolbox™ is open, compute
+in parallel. If the Parallel Computing Toolbox is
+not installed, or a <tt>matlabpool</tt> is not open, computation
+occurs in serial mode. Default is <tt>default</tt>, meaning
+serial computation.</td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>UseSubstreams</tt></td><td bgcolor="#F2F2F2">Set to <tt>true</tt> to compute in parallel in a
+reproducible fashion. Default is <tt>false</tt>. To compute
+reproducibly, set <tt>Streams</tt> to a type allowing substreams: <tt>'mlfg6331_64'</tt> or <tt>'mrg32k3a'</tt>.</td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>Streams</tt></td><td bgcolor="#F2F2F2">A <a href="http://www.mathworks.com/help/matlab/ref/randstream.html"><tt>RandStream</tt></a> object
+or cell array of such objects. If you do not specify <tt>Streams</tt>, <tt>kmeans</tt> uses
+the default stream or streams. If you choose to specify <tt>Streams</tt>,
+use a single object except in the case:<ul type="disc"><li><p>You have an open MATLAB<sup>®</sup> pool</p></li><li><p><tt>UseParallel</tt> is <tt>true</tt></p></li><li><p><tt>UseSubstreams</tt> is <tt>false</tt></p></li></ul><p>In that case, use a cell array the same size
+as the MATLAB pool. If a MATLAB pool is not open, then <tt>Streams</tt> must
+supply a single random number stream.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'replicates'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Number of times to repeat
+the clustering, each with a new set of initial cluster centroid positions. <tt>kmeans</tt> returns
+the solution with the lowest value for <tt>sumd</tt>. You
+can supply <tt>'replicates'</tt> implicitly by supplying
+a 3D array as the value for the <tt>'start'</tt> parameter.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2" rowspan="5"><tt>'start'</tt></td><td bgcolor="#F2F2F2" colspan="2"><p>Method used to choose the
+initial cluster centroid positions, sometimes known as <span class="emphasis"><em>seeds</em></span>.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'sample'</tt></td><td bgcolor="#F2F2F2"><p>Select <tt>k</tt> observations from <tt>X</tt> at
+random (default).</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'uniform'</tt></td><td bgcolor="#F2F2F2"><p>Select <tt>k</tt> points uniformly at random
+from the range of <tt>X</tt>. Not valid with Hamming distance.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><tt>'cluster'</tt></td><td bgcolor="#F2F2F2"><p>Perform a preliminary clustering phase on a random 10%
+subsample of <tt>X</tt>. This preliminary phase is itself
+initialized using 'sample'.</p></td></tr>
+<tr valign="top"><td bgcolor="#F2F2F2"><p>Matrix</p></td><td bgcolor="#F2F2F2"><p><tt>k</tt>-by-<tt>p</tt> matrix of
+centroid starting locations. In this case, you can pass in <tt>[]</tt> for <tt>k</tt>,
+and <tt>kmeans</tt> infers <tt>k</tt> from the
+first dimension of the matrix. You can also supply a 3-D array, implying
+a value for the <tt>'replicates'</tt> parameter from the
+array's third dimension.</p></td></tr>
+</tbody></table><p></p></div><div itemprop="content"></div><div itemprop="content"><a name="brbl3i1-1"></a><h2>Examples</h2><p>The following creates two clusters from separated random data:</p><pre class="programlisting">X = [randn(100,2)+ones(100,2);...
+     randn(100,2)-ones(100,2)];
+opts = statset('Display','final');
+
+[idx,ctrs] = kmeans(X,2,...
+                    'Distance','city',...
+                    'Replicates',5,...
+                    'Options',opts);
+5 iterations, total sum of distances = 284.671
+4 iterations, total sum of distances = 284.671
+4 iterations, total sum of distances = 284.671
+3 iterations, total sum of distances = 284.671
+3 iterations, total sum of distances = 284.671
+
+plot(X(idx==1,1),X(idx==1,2),'r.','MarkerSize',12)
+hold on
+plot(X(idx==2,1),X(idx==2,2),'b.','MarkerSize',12)
+plot(ctrs(:,1),ctrs(:,2),'kx',...
+     'MarkerSize',12,'LineWidth',2)
+plot(ctrs(:,1),ctrs(:,2),'ko',...
+     'MarkerSize',12,'LineWidth',2)
+legend('Cluster 1','Cluster 2','Centroids',...
+       'Location','NW')</pre><p>
+<img src="./K-means clustering - MATLAB kmeans_files/kmeans.gif" height="356" width="454" alt="" class="scaled-image"></p></div><div class="clear"></div><div class="moreabout"><h2 id="moreabout">More About</h2><div class="expandableContent"><p class="switch"><a href="javascript:void(0);" class="expandAllLink">expand all</a></p><div class="expandableContent" itemprop="content"><a name="f3884002"></a><h3 class="expand"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span>Algorithms</span></a></span></h3><div class="collapse"><p><tt>kmeans</tt> uses a two-phase iterative algorithm
+to minimize the sum of point-to-centroid distances, summed over all <tt>k</tt> clusters:</p><ol type="1"><li><p>The first phase uses <a class="indexterm" name="zmw57dd0e157307"></a><i>batch updates</i>, where each iteration
+consists of reassigning points to their nearest cluster centroid,
+all at once, followed by recalculation of cluster centroids. This
+phase occasionally does not converge to solution that is a local minimum,
+that is, a partition of the data where moving any single point to
+a different cluster increases the total sum of distances. This is
+more likely for small data sets. The batch phase is fast, but potentially
+only approximates a solution as a starting point for the second phase.
+ </p></li><li><p>The second phase uses <a class="indexterm" name="zmw57dd0e157316"></a><i>online updates</i>, where points are
+individually reassigned if doing so will reduce the sum of distances,
+and cluster centroids are recomputed after each reassignment. Each
+iteration during the second phase consists of one pass though all
+the points. The second phase will converge to a local minimum, although
+there may be other local minima with lower total sum of distances.
+The problem of finding the global minimum can only be solved in general
+by an exhaustive (or clever, or lucky) choice of starting points,
+but using several replicates with random starting points typically
+results in a solution that is a global minimum.</p></li></ol></div></div></div></div><div itemprop="content"><a name="brbl3ix-1"></a><h2>References</h2><a name="brbl3ix-3"></a><p>[1] Seber, G. A. F. <span class="citetitle"><i>Multivariate
+Observations</i></span>. Hoboken, NJ: John Wiley &amp; Sons, Inc.,
+1984.</p><a name="brbl3ix-4"></a><p>[2] Spath, H. <span class="citetitle"><i>Cluster Dissection
+and Analysis: Theory, FORTRAN Programs, Examples</i></span>. Translated
+by J. Goldschmidt. New York: Halsted Press, 1985.</p></div><h2>See Also</h2><p><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/clusterdata.html"><span itemprop="name"><tt>clusterdata</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/linkage.html"><span itemprop="name"><tt>linkage</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/silhouette.html"><span itemprop="name"><tt>silhouette</tt></span></a></span></p>
+</section>
+<div class="feedbackblock">Was this topic helpful?
+<input type="button" value="Yes" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-YES-R2013a&#39;);">
+<input type="button" value="No" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-NO-R2013a&#39;);">
+</div>
+<!--Last updated: Sun Feb 24 20:32:38 EST 2013-->
+<div class="footer_container execmatlabproduct">
+<div class="footer">
+<ul class="footernav">
+              <li class="footernav_trademarks"><a href="matlab:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li>
+              <li class="footernav_trademarks"><a href="matlab:web([matlabroot '/trademarks.txt'])">Trademarks</a></li>
+              <li class="footernav_patents"><a href="matlab:web([matlabroot '/patents.txt'])">Patents</a></li>
+              <li class="footernav_help"><a href="matlab:web([matlabroot '/license.txt'])">Terms of Use</a></li>
+           </ul>
+<div class="copyright">© 1994-2013 The MathWorks, Inc.</div>
+</div>
+</div>
+ </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_192">
+<div class="fat_footer">
+<div class="callout_container rounded gradient margined_0 "> <div class="callout_content bg_left left_top" style="background-image:url(/images/nextgen/callouts/bg-trial-arrow_02.png);"> <h3>Try MATLAB, Simulink, and Other Products</h3>
+<a href="http://www.mathworks.com/programs/trials/trial_request.html?prodcode=ST&eventid=592479823&s_iid=doc_trial_ST_footer" class="cta">Get trial now</a>
+</div>
+</div>
+</div>
+</div>
+      <div class="grid_192"> <div class="footer_container">
+<div class="footer">
+<div class="social_media_icon_container">
+<div class="social_media_icons">
+<ul class="footernav">
+<li class="footernav_rss"><a href="http://www.mathworks.com/company/rss/index.html"></a></li>
+<li class="footernav_google"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_fbk&url=https://plus.google.com/117177960465154322866?prsrc=3" target="_blank"></a></li>
+<li class="footernav_facebook"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_fbk&url=http://www.facebook.com/MATLAB" target="_blank"></a></li>
+<li class="footernav_twitter"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_twt&url=http://www.twitter.com/MATLAB" target="_blank"></a></li>
+</ul>
+</div>
+<p><em>Join the conversation</em></p>
+</div>
+<ul class="footernav">
+<li class="footernav_piracy"><a href="http://www.mathworks.com/company/aboutus/policies_statements/piracy.html">Preventing Piracy</a></li>
+<li class="footernav_privacy"><a href="http://www.mathworks.com/company/aboutus/policies_statements/">Privacy Policy</a></li>
+<li class="footernav_trademarks"><a href="http://www.mathworks.com/company/aboutus/policies_statements/trademarks.html">Trademarks</a></li>
+<li class="footernav_patents"><a href="http://www.mathworks.com/company/aboutus/policies_statements/patents.html">Patents</a></li>
+<li class="footernav_help"><a href="http://www.mathworks.com/help.html">Site Help</a></li>
+</ul>
+<div class="copyright">© 1994-2013 The MathWorks, Inc.</div>
+</div>
+</div>
+<!-- SURVEY POPUP CODE - BEGINS -->
+<script type="text/javascript" language="javascript">
+function getCookie(name) {
+var dc = document.cookie;
+var prefix = name + "=";
+var begin = dc.indexOf("; " + prefix);
+if (begin == -1) {
+begin = dc.indexOf(prefix);
+if (begin != 0) return null;
+} else
+{
+begin += 2;
+}
+var end = document.cookie.indexOf(";", begin);
+if (end == -1)
+end = dc.length;
+return unescape(dc.substring(begin + prefix.length, end));
+}
+// Sets the cookie for users who get the invite
+function setCookie(name, value, expires, path, domain, secure) {
+var curCookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "");
+document.cookie = curCookie;
+}
+function popup_survey()
+{
+setCookie("survey", "yes", new Date("April 30, 2011"), "/");
+openWindow('/programs/customersat/surveys/invites/invite_support.html', 460, 150, 'scrollbars=no,resizable=no', 'invitewin');
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+//document.getElementById("Cookies").innerHTML = "visitedSupport:" + getCookie("visitedSupport") + "<br/> Survey:" + getCookie("survey");
+if((getCookie("visitedSupport") == "yes") && (getCookie("survey") == null))
+{
+popup_survey();
+}
+</script>
+<!-- SURVEY POPUP CODE - ENDS -->
+<!-- SiteCatalyst code version: H.24.4.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="./K-means clustering - MATLAB kmeans_files/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4. --> </div>
+    </div>
+    
+    
+
+</body></html>

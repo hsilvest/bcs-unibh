@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="2DDDBF6A-7499-FC6E-6C21-ADF5265A1878" name="COMPRADOR" seqName="seg_0"/>
+   <object objectType="Table" objectID="3B71DFD0-44E3-E50C-7FC0-2606B265BC9E" name="FATURAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="8A2F6524-11A9-7016-E458-1F08C3BD4226" name="LOCAL" seqName="seg_0"/>
+   <object objectType="Table" objectID="E4101B17-A723-E340-B03C-237A6C8801CF" name="IMOVEL" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4A3B4610-767C-AF2C-7BE0-58E1094D052D" name="FATURAMENTO_IMOVEL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="88A24B13-033F-9686-5CA2-01EE6C297E4E" name="IMOVEL_LOCAL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D62F76E0-7080-0561-933E-69ABEB454F65" name="FATURAMENTO_COMPRADOR_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

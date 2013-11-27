@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="11DD76F0-C56D-7DEA-DAB4-CB1BBBE595C4" name="PEDIDO_SOFTWARE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:54:05 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<containerWithKeyObject>7A978C89-7AC6-0AF9-9F07-54B6A577146D</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>8ABC0FB4-5667-6A59-2EC9-280CD117FC19</localFKIndex>
+<keyObject>9B989B73-CFCE-450C-DF43-2D10274274F6</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17BA2DC6-EC94-164B-133D-418197F28C0B" name="PEDIDO_FATURAMENTO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:00:21 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<containerWithKeyObject>7A978C89-7AC6-0AF9-9F07-54B6A577146D</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>419D51AD-AB2A-5C0F-93C6-7177367F0711</localFKIndex>
+<keyObject>4EBA303B-7294-BF6A-3D9D-5086389780D2</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

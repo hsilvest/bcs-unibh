@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A978C89-7AC6-0AF9-9F07-54B6A577146D" name="PEDIDO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:36:45 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PEDIDO" id="FED927B4-EF5B-782D-95EF-22493E6756A2">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:41:59 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MATRIZ" id="A4F1F34C-211D-0B74-8B4A-978A11DDD62E">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:41:59 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>285198B2-4AB1-B9EC-68E4-1C5A3218540A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B08ADF7A-5F19-FFC7-E7CD-2A9448B57CB1" referredColumn="285198B2-4AB1-B9EC-68E4-1C5A3218540A"/>
+</associations>
+</Column>
+<Column name="COD_FILIAL" id="56A46FC9-28F8-73D7-BC06-61D7988A2C78">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:41:59 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D265EAC5-B714-0A84-8005-4BD0993BC1F5</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44D8834E-44B6-F0E4-B336-688DEB5BAA16" referredColumn="D265EAC5-B714-0A84-8005-4BD0993BC1F5"/>
+</associations>
+</Column>
+<Column name="COD_SOFTWARE" id="C23BF086-8A7A-BEBC-FF46-7E8AB71EB720">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:41:59 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>34436292-B023-122E-D02C-C833DEAFC826</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="11DD76F0-C56D-7DEA-DAB4-CB1BBBE595C4" referredColumn="34436292-B023-122E-D02C-C833DEAFC826"/>
+</associations>
+</Column>
+<Column name="QTDE" id="A089B120-D2D5-69DF-40A9-72410C730901">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:52:53 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NF" id="C262D085-9AC4-4718-A062-86CD9CA05CD6">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:52:53 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CC5DBE62-13F9-012F-8898-820814C5978D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17BA2DC6-EC94-164B-133D-418197F28C0B" referredColumn="CC5DBE62-13F9-012F-8898-820814C5978D"/>
+</associations>
+</Column>
+<Column name="VLR_UNITARIO" id="6616A236-18EF-D901-3CD2-8BF8E2B2845D">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:52:53 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="243AA02A-BD38-A614-4593-4E414515C464" name="PEDIDO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:52:53 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED927B4-EF5B-782D-95EF-22493E6756A2"/>
+<colUsage columnID="C23BF086-8A7A-BEBC-FF46-7E8AB71EB720"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25E01543-DC4C-B25F-19C3-EF93C377909B" name="PEDIDO_MATRIZ_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:54:05 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4F1F34C-211D-0B74-8B4A-978A11DDD62E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="329DBFDE-D2C6-6620-B3B0-066FF290BE9B" name="PEDIDO_FILIAL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:54:05 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56A46FC9-28F8-73D7-BC06-61D7988A2C78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ABC0FB4-5667-6A59-2EC9-280CD117FC19" name="PEDIDO_SOFTWARE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 22:54:05 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C23BF086-8A7A-BEBC-FF46-7E8AB71EB720"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="419D51AD-AB2A-5C0F-93C6-7177367F0711" name="PEDIDO_FATURAMENTO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:00:21 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C262D085-9AC4-4718-A062-86CD9CA05CD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

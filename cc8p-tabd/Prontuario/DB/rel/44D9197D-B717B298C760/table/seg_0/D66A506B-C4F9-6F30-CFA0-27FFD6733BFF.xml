@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D66A506B-C4F9-6F30-CFA0-27FFD6733BFF" name="MEDICO_ESPECIALIDADE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:36:13 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRM" id="8496B527-0EFB-0836-1CD4-964E5547DBD4">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:37:23 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>3E168B8F-7EE1-4992-0E40-E3F3DE59F670</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37CEF821-D4BF-0C7F-A165-6057567117EE" referredColumn="3E168B8F-7EE1-4992-0E40-E3F3DE59F670"/>
+</associations>
+</Column>
+<Column name="COD_ESPECIALIDADE" id="E50864B5-0364-8CA6-1EF3-18B7D1677F6F">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:37:23 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0C3464FD-6D94-E35E-6610-1137CF59F623</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="836963DF-F572-E40E-C50D-F6EEE920EFCD" referredColumn="0C3464FD-6D94-E35E-6610-1137CF59F623"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D1BC33D-BB55-0741-516A-ADC6F7B617DC" name="MEDICO_ESPECIALIDADE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:37:23 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8496B527-0EFB-0836-1CD4-964E5547DBD4"/>
+<colUsage columnID="E50864B5-0364-8CA6-1EF3-18B7D1677F6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E93B5B5-8BD7-D89F-CC69-C5FD15657E80" name="MEDICO_ESPEC_MEDICO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:37:43 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8496B527-0EFB-0836-1CD4-964E5547DBD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="709E66D8-C365-6F5C-A3FF-BFB21B574F52" name="MEDICO_ESPEC_ESPECIALIDADE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:38:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E50864B5-0364-8CA6-1EF3-18B7D1677F6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

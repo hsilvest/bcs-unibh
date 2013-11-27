@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3990A36B-B966-F8F7-EDA6-8793D16AC617" name="CONSULTA_PROCEDIMENTO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:05:06 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CONSULTA" id="080E3D6D-A546-7B4D-5C22-D87DBC0D8CB9">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:05:58 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>001ACB67-A233-149B-A92F-570AEA91E9AD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="003AD648-D462-C651-BE4D-40E68096ABBA" referredColumn="001ACB67-A233-149B-A92F-570AEA91E9AD"/>
+</associations>
+</Column>
+<Column name="DATA" id="49A566F3-4876-2624-6F89-AD09E907BDC5">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:05:58 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<delegate>B177B0E6-3875-2280-E01C-0883A998E7EB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="003AD648-D462-C651-BE4D-40E68096ABBA" referredColumn="B177B0E6-3875-2280-E01C-0883A998E7EB"/>
+</associations>
+</Column>
+<Column name="COD_PROCEDIMENTO" id="4AF30BD6-08E2-4CE6-5DF7-7CE45DDFA07E">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:05:58 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>63B1A4C3-4951-4B10-B345-260AE3B9BED8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="670CE3F7-3028-E4EC-A0EE-FFD23C3CE1E7" referredColumn="63B1A4C3-4951-4B10-B345-260AE3B9BED8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DB7017B-5875-0815-376B-A55A0BA76853" name="CONSULTA_PROCEDIMENTO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:06:39 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49A566F3-4876-2624-6F89-AD09E907BDC5"/>
+<colUsage columnID="080E3D6D-A546-7B4D-5C22-D87DBC0D8CB9"/>
+<colUsage columnID="4AF30BD6-08E2-4CE6-5DF7-7CE45DDFA07E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DFD2476-CA5A-DDEA-77BB-89EE94589194" name="CONSULTA_PROC_CONSULTA_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:07:10 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="080E3D6D-A546-7B4D-5C22-D87DBC0D8CB9"/>
+<colUsage columnID="49A566F3-4876-2624-6F89-AD09E907BDC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B6C9B19-1B5C-6D0D-2BB0-62AABF19F129" name="CONSULTA_PROC_PROCEDIMENTO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 03:07:10 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AF30BD6-08E2-4CE6-5DF7-7CE45DDFA07E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

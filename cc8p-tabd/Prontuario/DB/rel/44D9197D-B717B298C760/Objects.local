@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="09CFFD39-9CAE-8076-3EF1-5CF0C94FCFA0" name="CONSULTA_MEDICAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="2F1A9AE6-723C-FC69-7D18-A62E320263D6" name="PACIENTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="32815440-E24A-DFEB-AFE3-B1404FDF7923" name="MEDICO" seqName="seg_0"/>
+   <object objectType="Table" objectID="3990A36B-B966-F8F7-EDA6-8793D16AC617" name="CONSULTA_PROCEDIMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="6AB7548C-5F10-DAD3-BBD1-85461B15FE16" name="CONSULTA_EXAME" seqName="seg_0"/>
+   <object objectType="Table" objectID="74AA128C-16A5-403B-19D3-FC2EEE5D5E43" name="MEDICAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="9C5FB20E-3400-1A82-5D28-CD39DB65C6E1" name="EXAME" seqName="seg_0"/>
+   <object objectType="Table" objectID="B0855132-86E8-E12D-6711-F2272D108505" name="PROCEDIMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="B6100225-BDC6-A73B-9C0A-12B2BD4824C3" name="CONSULTA" seqName="seg_0"/>
+   <object objectType="Table" objectID="B84FBF53-C2D3-A6A6-3DB2-20D83ABB8523" name="ESPECIALIDADE" seqName="seg_0"/>
+   <object objectType="Table" objectID="D66A506B-C4F9-6F30-CFA0-27FFD6733BFF" name="MEDICO_ESPECIALIDADE" seqName="seg_0"/>
+   <object objectType="Table" objectID="DF30C552-65FE-CEA6-61A3-6013FC4FA8B6" name="TIPO_PS" seqName="seg_0"/>
+   <object objectType="Table" objectID="F12C9756-9931-2778-2435-2317BC5DD6A1" name="PLANO_SAUDE" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="003AD648-D462-C651-BE4D-40E68096ABBA" name="CONSULTA_PROC_CONSULTA_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="02617CDF-B900-8395-2B53-18BF8FA8D7D6" name="PACIENTE_PLANO_SAUDE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="37CEF821-D4BF-0C7F-A165-6057567117EE" name="MEDICO_ESPEC_MEDICO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="40CEF181-9205-F32A-C9A2-797718BBD30F" name="CONSULTA_MED_MEDICAMENTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="670CE3F7-3028-E4EC-A0EE-FFD23C3CE1E7" name="CONSULTA_PROC_PROCEDIMENTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7DAF6733-74C5-AC8D-B5F8-DE996FC78EEE" name="CONSULTA_MED_CONSULTA_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="836963DF-F572-E40E-C50D-F6EEE920EFCD" name="MEDICO_ESPEC_ESPECIALIDADE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9881F4BD-3ACF-5FB8-C269-04FC4A9DC8D7" name="CONSULTA_PACIENTE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B3A4E378-8EE3-71AE-BE3E-80130ADFC3CF" name="CONSULTA_MEDICO_ESPEC_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BD27C000-7E45-0A6A-D99E-F1528C83918D" name="CONSULTA_EXAME_EXAME_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CE7B91E1-F4CE-F96B-0E8C-C1EB5C5FB6CA" name="CONSULTA_EXAME_CONSULTA_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FD0ED5EA-9C26-E1E9-D039-3A4A4195F121" name="PLANO_SAUDE_TIPO_PS_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

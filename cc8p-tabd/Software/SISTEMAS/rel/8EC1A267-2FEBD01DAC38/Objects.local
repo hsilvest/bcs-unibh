@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E4D409B1-A23E-30A2-A4F7-3C8B051D6ADA" name="FABRICANTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="08A7A1B3-042D-048A-DE5F-DAD8AE99FE2A" name="FATURAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="F3EE1D87-0355-C3AA-DE89-F779DD7CED78" name="FILIAL" seqName="seg_0"/>
+   <object objectType="Table" objectID="53E885E1-8345-0F93-A459-D515BADB1E7D" name="MATRIZ" seqName="seg_0"/>
+   <object objectType="Table" objectID="7A978C89-7AC6-0AF9-9F07-54B6A577146D" name="PEDIDO" seqName="seg_0"/>
+   <object objectType="Table" objectID="2AAFDA5A-39E0-2B58-DABC-4AA855B86FFA" name="SOFTWARE" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BC913D65-EA78-1BAE-E2CE-758D825E44E1" name="FATURAMENTO_MATRIZ_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0AF03860-D5AC-F1C0-7CE1-30BC667DD79B" name="FILIAL_MATRIZ_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="17BA2DC6-EC94-164B-133D-418197F28C0B" name="PEDIDO_FATURAMENTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="44D8834E-44B6-F0E4-B336-688DEB5BAA16" name="PEDIDO_FILIAL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B08ADF7A-5F19-FFC7-E7CD-2A9448B57CB1" name="PEDIDO_MATRIZ_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="11DD76F0-C56D-7DEA-DAB4-CB1BBBE595C4" name="PEDIDO_SOFTWARE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7B3377E0-8CD6-CF6F-95EC-592CAE8FB3FA" name="SOFTWARE_FABRICANTE_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F0A3666E-9E95-F491-D765-CD876193FF1E" name="CONSULTA_PERIODO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:31:12 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<containerWithKeyObject>FD3D4691-6677-5924-7BEE-A0FE4EC0C565</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>D15F453A-D625-C6F3-C759-DC62C57A8DC7</localFKIndex>
+<keyObject>E44D4266-0A92-7D8A-9287-0F8B6F6D07D9</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

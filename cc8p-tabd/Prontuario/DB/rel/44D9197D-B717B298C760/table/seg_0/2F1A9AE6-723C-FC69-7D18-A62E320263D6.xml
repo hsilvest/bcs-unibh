@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F1A9AE6-723C-FC69-7D18-A62E320263D6" name="PACIENTE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-20 23:18:44 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PACIENTE" id="9783772D-74BA-EEA8-8803-6036277E00A4">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:49:59 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PACIENTE" id="4E921352-43C7-5A26-A7D0-45F54919D3B5">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:49:59 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PLANO" id="F88C0554-432B-189D-7A73-F47077F37085">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:20:44 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>32C8186B-F0FA-41E2-130F-64710745B732</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02617CDF-B900-8395-2B53-18BF8FA8D7D6" referredColumn="32C8186B-F0FA-41E2-130F-64710745B732"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5FE9E39-41C9-AD86-1354-1D08037B9D45" name="PACIENTE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-21 00:49:59 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9783772D-74BA-EEA8-8803-6036277E00A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBC4C8A2-63AD-61AA-7641-C636FA8681E1" name="PACIENTE_PLANO_SAUDE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:21:05 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F88C0554-432B-189D-7A73-F47077F37085"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

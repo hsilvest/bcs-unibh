@@ -1,0 +1,146 @@
+\documentclass[conference,harvard,brazil,english,10pt]{artigo-poc}
+\usepackage[latin1]{inputenc}
+\usepackage{ae}
+\usepackage{indentfirst}
+\makeatletter
+\def\verbatim@font{\normalfont\ttfamily\footnotesize}
+\makeatother
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[algoruled,lined, boxed,portugues]{algorithm2e}
+\usepackage{graphicx,color,url}
+\usepackage{everysel}
+\renewcommand*\familydefault{\ttdefault}
+\EverySelectfont{%
+\fontdimen2\font=0.4em% interword space
+\fontdimen3\font=0.2em% interword stretch
+\fontdimen4\font=0.1em% interword shrink
+\fontdimen7\font=0.1em% extra space
+\hyphenchar\font=`\-% to allow hyphenation
+\setlength{\parskip}{0cm plus4mm minus3mm}
+
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+% --------------------------------------------------
+
+
+\begin{document}
+
+\title{ESTUDO DAS TÉCNICAS DE APRENDIZADO DE MÁQUINA COM FOCO EM DIAGNÓSTICOS CLÍNICOS}
+
+\author{\textbf{Henrique Silvestre Souza}^{1}}{henriquesilvestre@outlook.com^{1}}
+\author[1]{\textbf{Pedro Lucas Cristiano de Castro}^{2}}{pedrinholuca@hotmail.com^{2}}
+\author[1]{\textbf{Euzébio de Souza}^{3}(Orientador)}{souzaeds@oi.com.br^{3}}
+\address{Centro Universitário de Belo Horizonte, Belo Horizonte, MG}
+
+\twocolumn[
+\maketitle
+
+\selectlanguage{brazil}
+\begin{abstract}
+\textit{A inteligência artificial é uma área dentro das ciências da computação que estuda a criação e a compreensão de entidades inteligentes através de modelos computacionais e algumas técnicas específicas, neste artigo serão descritos algumas dessas técnicas e com o enfoque principal em aprendizado de máquina, a qual se objetiva em dar autonomia a um computador através de aprendizado automático de forma que o conhecimento adquirido influencie decisões futuras, o diagnóstico clínico é uma área de estudo que vem sendo bastante explorado utilizando técnicas de aprendizado de máquina para auxiliar o médico na análise e identificação do diagnóstico, assim este artigo abrangerá aplicações de aprendizado de máquina em diagnósticos clínicos.}
+\end{abstract}
+\keywords{\textit{Inteligência Artificial, Aprendizado de Máquina}}
+
+\selectlanguage{english}
+\begin{abstract}
+\textit{Artificial intelligence is an area within computer science that studies the creation and understanding of intelligent entities through computational models and some specific techniques, this article will describe some of these techniques, with the primary focus on machine learning, which aims to to give autonomy to a computer via automatic learning so that the knowledge gained influence future decisions, the clinical diagnosis is an area of study that has been extensively explored using machine learning techniques to assist the physician in the analysis and identification of diagnostic, so this article will cover applications of machine learning in clinical diagnostics.}
+\end{abstract}
+\keywords{\textit{Artificial Intelligence. Machine Learning.}}
+\begin{center}
+\line(1,0){400}
+\linebreak
+\end{center}
+]
+
+% CONTRIBUIÇÃO
+
+\selectlanguage{brazil}
+\onehalfspace
+
+
+\section{\textsc{Introdução}}
+A inteligência artificial é uma área dentro das ciências da computação que estuda a criação e a compreensão de entidades inteligentes através de modelos computacionais, existem várias definições diferentes de inteligência de acordo com diferentes autores onde cada um segue sua linha de pensamento, onde alguns defendem que sistemas inteligentes são aqueles que têm a capacidade de pensar como o homem, dessa forma inteligência artificial é ``O novo e excitante esforço para fazer os computadores pensarem... máquinas com mentes, no sentido amplo e literal'' (Haugeland, 1985), e também outra linha de pensamento prega que sistemas inteligentes são aqueles que conseguem realizar tarefas que um homem pode fazer, ou seja, agir como homem, ``O estudo de como fazer computadores realizarem coisas com as quais, no momento, as pessoas as fazem melhor” (Rich e Knight, 1991), ambas abordagens centralizam a figura do homem como sendo um parâmetro a ser alcançado de maneira computacional, por outro lado existem pesquisadores que defendem a racionalidade, ou seja sistemas inteligentes são aqueles sistemas que tem a capacidade de pensar de forma racional “O estudo das faculdades mentais através da utilização de modelos computacionais” (Charniak e McDermott, 1995) e outros definem sistemas inteligentes como sistemas que conseguem agir de forma racional “O ramo da ciência da computação preocupado  com a automação do comportamento inteligente”. 
+Tanto as abordagens que utilizam o humano como parâmetro a ser alcançado quanto a racionalidade são seguidas atualmente.
+O aprendizado de máquina é uma sub-área da inteligência artificial que se objetiva em dar autonomia a um computador através de aprendizado automático de forma que o conhecimento adquirido influencie decisões futuras, de maneira geral a inteligência artificial utiliza de duas abordagens para formular um raciocínio que são, o raciocínio indutivo o qual utiliza uma massa de dados para identificar, derivar e desenvolver padrões, e  o raciocínio dedutivo, o qual se baseia em silogismo, no entanto a aprendizagem de máquina utiliza apenas uma dessas abordagens que é o raciocínio indutivo. 
+Muitas são as técnicas que podem ser utilizadas para implementar o aprendizado computacional inteligente dais quais pode se citar as árvores de decisão, regra de associação, redes neurais, programação genética, programação com lógica indutiva, máquinas de suporte vetorial, agrupamento, redes bayesianas, aprendizado de reforço, aprendizado de representação, e outras muitas técnicas. \linebreak
+
+
+%\begin{enumerate}
+	%\item [1.1] \large \textbf{\textsc{Árvores de decisão}}  \\ \\
+	%As árvores de decisão são ferramentas de apoia a decisão que utiliza grafos ou modelagem lógica para representar estados, ações e suas consequências, árvores de decisão são amplamente utilizadas em pesquisas operacionais. \\
+	%\item [1.2] \textbf{\textsc{Regra da Associação}} \\ \\ 
+	%Regra de associação é um método muito utilizado na mineração de dados pois seu objetivo é descobrir relações entre variáveis de uma grande massa de dados utilizando métricas de interesses específicos, sendo dessa forma uma excelente ferramenta para ser utilizada na mineração de dados. \\
+	%\item [1.3]\textbf{\textsc{Redes Neurais}} \\ \\
+	%Redes neurais é uma técnica de modelagem matemática não linear que são utilizadas para modelar relacionamentos complexos entre entrada e saída de informações para encontrar padrões nessas informações. \\
+	%\item [1.4]\textbf{\textsc{Programação Genética}} \\ \\
+	%A programação genética é uma técnica de aprendizagem de máquina utilizada para realizar otimização de programa de computares de acordo com cenários adaptativos que dentro da biologia são utilizados para comparar genótipos e reprodução sucessiva, dessa forma a programação genética também a utiliza porém com a abordagem de verificar a performance computacional na realização de determinada tarefa. \\
+	%\item [1.5]\textbf{\textsc{Programação com Lógica Indutiva}} \\ \\
+	%A programação com lógica indutiva é uma abordagem do aprendizado de maquina utilizando programação logica como uma representação uniforme de amostragem, é comumente utilizada em outra área da inteligência artificial, o processamento de linguagem natural. \\
+	%\item [1.6]\textbf{\textsc{Maquinas de Suporte de Vetor}} \\ \\
+	%Máquinas de suporte vetorial são modelos de aprendizagem supervisionada que analisa e reconhece padrões amplamente utilizada na classificação e regressão para dada um determinado exemplo inusitado realizar a classificação do mesmo. \\
+	%\item [1.7]\textbf{\textsc{Redes Bayesianas}} \\ \\
+	%Rede Bayesianas é um modelo matemático probabilístico que representa um conjunto de variáveis e suas condições independentes representada por um grafo. \\
+	%\item [1.8]\textbf{\textsc{Aprendizado de Reforço}} \\ \\
+	%Rede Bayesianas é um modelo matemático probabilístico que representa um conjunto de variáveis e suas condições independentes representada por um grafo acíclico direto. 
+	%
+%\end{enumerate}
+
+	\subsection{Árvores de decisão}
+	As árvores de decisão são ferramentas de apoia a decisão que utiliza grafos ou modelagem lógica para representar estados, ações e suas consequências, árvores de decisão são amplamente utilizadas em pesquisas operacionais.
+	\subsection{Regra da Associação} 
+	Regra de associação é um método muito utilizado na mineração de dados pois seu objetivo é descobrir relações entre variáveis de uma grande massa de dados utilizando métricas de interesses específicos, sendo dessa forma uma excelente ferramenta para ser utilizada na mineração de dados. \\
+	\subsection{Redes Neurais}
+	Redes neurais é uma técnica de modelagem matemática não linear que são utilizadas para modelar relacionamentos complexos entre entrada e saída de informações para encontrar padrões nessas informações. 
+	\subsection{Programação Genética}
+	A programação genética é uma técnica de aprendizagem de máquina utilizada para realizar otimização de programa de computares de acordo com cenários adaptativos que dentro da biologia são utilizados para comparar genótipos e reprodução sucessiva, dessa forma a programação genética também a utiliza porém com a abordagem de verificar a performance computacional na realização de determinada tarefa. 
+	\subsection{Programação com Lógica Indutiva}
+	A programação com lógica indutiva é uma abordagem do aprendizado de maquina utilizando programação logica como uma representação uniforme de amostragem, é comumente utilizada em outra área da inteligência artificial, o processamento de linguagem natural.
+	\subsection{Maquinas de Suporte de Vetor}
+	Máquinas de suporte vetorial são modelos de aprendizagem supervisionada que analisa e reconhece padrões amplamente utilizada na classificação e regressão para dada um determinado exemplo inusitado realizar a classificação do mesmo. 
+	\subsection{Redes Bayesianas}
+	Rede Bayesianas é um modelo matemático probabilístico que representa um conjunto de variáveis e suas condições independentes representada por um grafo. \\
+	\subsection{Aprendizado de Reforço}
+	Rede Bayesianas é um modelo matemático probabilístico que representa um conjunto de variáveis e suas condições independentes representada por um grafo acíclico direto. 
+
+
+\section{\textsc{Metodologia Proposta}} \label{metodo}
+
+
+
+\subsection{\textsc{Representação de uma solução}}
+
+
+\subsection{\textsc{Técnicas de Encaixe}}
+
+
+\subsection{\textsc{Função de Avaliação}}\label{FuncaoAvaliacao}
+
+
+\subsection{\textsc{Estrutura de Vizinhança}}
+
+
+\subsection{{\it \textsc{Greedy Randomized Adaptive Search Procedure}} (GRASP)}
+
+
+
+\subsubsection{\textsc{Fase de Construção}}
+
+\subsubsection{\textsc{Fase de busca local}}
+
+
+
+\section{\textsc{Resultados Computacionais}} \label{resulta}
+
+
+
+\newpage
+		
+\section{\textsc{Conclusão}} \label{conc}
+
+
+\bibliography{exemplo}
+
+ 
+\end{document}
+

@@ -1,0 +1,26 @@
+* {
+	position: static !important;
+	background-color: #fff !important;
+	background-image: none !important;
+	color: #000 !important;
+}
+body {
+	font: 1em/1.33 Tahoma, Verdana, sans-serif;
+}
+a {
+	text-decoration: underline !important;
+}
+#topBlock {
+	margin-bottom: 1em;
+	border-bottom: 2px solid #000;
+}
+#footerBlock {
+	margin-top: 1em;
+	border-top: 2px solid #000;
+}
+#navigator {
+	margin-bottom: 1em;
+}
+#topSearch, #topMenu, #sideMenu, #illustration, #footerTopRgt, .forBlind, .hidden, .pagingBlock {
+	display: none;
+}

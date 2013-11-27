@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B3A4E378-8EE3-71AE-BE3E-80130ADFC3CF" name="CONSULTA_MEDICO_ESPEC_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:53:53 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<containerWithKeyObject>B6100225-BDC6-A73B-9C0A-12B2BD4824C3</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>521E0667-F2C9-3FBC-F974-6E8A236AC5E4</localFKIndex>
+<keyObject>2D1BC33D-BB55-0741-516A-ADC6F7B617DC</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

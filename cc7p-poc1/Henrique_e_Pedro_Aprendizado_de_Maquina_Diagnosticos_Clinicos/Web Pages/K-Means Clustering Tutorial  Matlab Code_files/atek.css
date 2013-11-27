@@ -1,0 +1,115 @@
+.nav {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #003399;
+	text-decoration: none;
+}
+
+.AgNavBottomGray {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.AgNavTopGray {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.AgExposeTopGray {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.text-bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.textunderline {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #330066;
+}
+.lettnav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+body {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.bot-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFF99;
+}
+.txtblue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003399;
+}
+.LeftFloatPicture {
+	float: left;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	border: none;
+
+}
+.ListBullet {
+	list-style-position: inside;
+	list-style-type: square;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #CCCCCC;
+
+}
+.txtBlack {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #000033;
+}
+.TutorialTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000033;
+	text-decoration: underline;
+
+
+}
+.matrix {
+	font-family: "lucida Console";
+	font-size: 10px;
+}

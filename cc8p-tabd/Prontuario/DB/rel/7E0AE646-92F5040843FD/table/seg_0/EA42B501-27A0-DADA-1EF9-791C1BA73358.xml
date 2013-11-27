@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA42B501-27A0-DADA-1EF9-791C1BA73358" name="PERIODO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:22:13 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANO_MES" id="567FB477-4F60-4A04-CCA5-4AF1DADFB7C7">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:22:44 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E44D4266-0A92-7D8A-9287-0F8B6F6D07D9" name="PERIODO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:31:00 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="567FB477-4F60-4A04-CCA5-4AF1DADFB7C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

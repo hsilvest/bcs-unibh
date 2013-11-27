@@ -1,0 +1,6 @@
+public void ( ) fazGol {
+ r10 = tenso
+ placar = 1000
+} 
+
+fazGol // fazGol agora e reservada

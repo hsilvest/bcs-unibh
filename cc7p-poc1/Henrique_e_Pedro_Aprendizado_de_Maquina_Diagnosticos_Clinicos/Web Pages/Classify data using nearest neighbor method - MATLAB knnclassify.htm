@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.mathworks.com/help/bioinfo/ref/knnclassify.html -->
+<html itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/widget113.css" media="all">
+<meta charset="utf-8">
+<title>Classify data using nearest neighbor method - MATLAB knnclassify</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/reset.css" rel="stylesheet" type="text/css">
+<link href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/960.css" rel="stylesheet" type="text/css">
+<link href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/site5.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/site5_ie6.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/site5_ie7.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/site5_ie8.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/site5_ie9.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="http://www.mathworks.com/includes_content/nextgen/css/doc_center/doc_center.css?20130417">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie6.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie7.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie8.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie9.css?20130417" rel="stylesheet" type="text/css">
+<![endif]-->
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/jquery-latest.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/jquery.hover-intent.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/localnav.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/global.js"></script>
+<script type="text/javascript" language="JavaScript1.3">var domain = "com";</script>
+<link rel="stylesheet" href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/docstyle.css" type="text/css"><meta name="chunktype" content="refpage"><meta name="refentity" itemprop="refentity" content="function:knnclassify">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="fcn">
+<meta name="infotype" itemprop="infotype" content="ref/function">
+<meta name="description" itemprop="description" content="This MATLAB function classifies the rows of the data matrix Sample into groups, based on the grouping of the rows of Training.">
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/docscripts.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/mw.toc.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/mw.imagescaling.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/mw.imageanimation.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/mw.breadcrumb.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/jquery.highlight.js"></script>
+<link href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<!-- Additions/overrides from the doc side -->
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/docsearch.js"></script>
+<script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/jquery.toggleval.js"></script>
+<!-- CUSTOM CSS -->
+<style>
+.fat_footer { padding:0px; }
+.fat_footer a:link, .fat_footer a:visited { color:#005fce; }
+.fat_footer .callout_container { margin-left:5px; font-size:1.0em; border:none; }
+.fat_footer .callout_container.rounded { border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; }
+.fat_footer .callout_container.gradient { background:transparent none; }
+.fat_footer .callout_content { min-height:45px; padding-top:10px; }
+</style>
+<div style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;" id="_atssh"><iframe id="_atssh852" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/sh114.htm"></iframe></div><script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/core074.js"></script></head> <body id="nextgen_b-dc" class="adjusted_template">
+    <div class="container_192">
+      <div class="grid_192">
+        <div class="page_container">
+          <div class="grid_192"><div class="header_container">
+<div class="headernav">
+<ul>
+<li class="headernav_country rollover_delay inactive_state"><a href="http://www.mathworks.com/company/worldwide/">United States</a>
+<div class="countrynav_container gradient shadow">
+<ul>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.com" rel="nofollow">United States</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.com" rel="nofollow">Canada</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.com.au" rel="nofollow">Australia</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.de" rel="nofollow">Österreich</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.nl" rel="nofollow">Belgium</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.cn" rel="nofollow">中国</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.se" rel="nofollow">Denmark</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.se" rel="nofollow">Finland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.fr" rel="nofollow">France</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.de" rel="nofollow">Deutschland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.in" rel="nofollow">India</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.co.uk" rel="nofollow">Ireland</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.it" rel="nofollow">Italia</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.co.jp" rel="nofollow">日本</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.co.kr" rel="nofollow">한국</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.nl" rel="nofollow">Luxembourg</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.nl" rel="nofollow">Netherlands</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.com.au" rel="nofollow">New Zealand</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.se" rel="nofollow">Norway</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.com" rel="nofollow">Portugal</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.es" rel="nofollow">España</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.se" rel="nofollow">Sweden</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.ch" rel="nofollow">Schweiz / Suisse</a></li>
+<li><a href="http://www.mathworks.com/includes_content/domainRedirect/country_select.html?uri=%2Fhelp%2Fbioinfo%2Fref%2Fknnclassify.html&domain=mathworks.co.uk" rel="nofollow">United Kingdom</a></li>
+<li><a href="http://www.mathworks.com/company/worldwide/">All Other Countries</a></li>
+</ul>
+</div>
+</li>
+<li class="headernav_contact"><a href="http://www.mathworks.com/company/aboutus/contact_us/">Contact Us</a></li>
+<li class="headernav_store"><a href="http://www.mathworks.com/store/default.do?s_cid=store_top_nav">Store</a></li>
+<li class="headernav_search"><form name="search" id="site_search" class="site_search" action="http://www.mathworks.com/searchresults/" method="get">
+<input type="hidden" name="c[]" value="entiresite">
+<input type="text" name="q" id="query" class="textfield">
+<input type="submit" id="searchbutton" value="Search" class="submit_go">
+</form></li>
+</ul>
+</div>
+<div class="mwa-nav">
+<ul>
+<li class="mwa-nav_name"><a href="https://www.mathworks.com/accesslogin/editProfile.do">Euzébio souza</a></li>
+<li class="mwa-nav_account"><a href="https://www.mathworks.com/accesslogin/myAccount.do">My Account</a></li>
+<li class="mwa-nav_logout"><a href="https://www.mathworks.com/accesslogin/logout.do?uri=http://www.mathworks.com/help/bioinfo/ref/knnclassify.html" id="mwa-log_out">Log Out</a></li>
+</ul>
+</div>
+<div class="logo_container">
+<a href="http://www.mathworks.com/index.html"><img src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/bg_header_mwlogo_notag.jpg" alt="MathWorks" class="mw_logo"></a>
+<p class="tagline">Accelerating the pace of engineering and science</p>
+</div>
+</div></div>
+          <div class="grid_192"> <div class="topnav_container">
+<div class="topnav_frame">
+<div class="topnav">
+<ul>
+<li class="topnav_products "><a href="http://www.mathworks.com/products/">Products &amp; Services</a></li>
+<li class="topnav_solutions "><a href="http://www.mathworks.com/solutions/">Solutions</a></li>
+<li class="topnav_academia "><a href="http://www.mathworks.com/academia/">Academia</a></li>
+<li class="topnav_support "><a href="http://www.mathworks.com/support/">Support</a></li>
+<li class="topnav_community "><a href="http://www.mathworks.com/matlabcentral/">User Community</a></li>
+<li class="topnav_events "><a href="http://www.mathworks.com/company/events/">Events</a></li>
+<li class="topnav_company "><a href="http://www.mathworks.com/company/">Company</a></li>
+</ul>
+</div>
+</div>
+</div> </div>
+          <div class="grid_192">        <div class="section_image level_3" style="background-color:#04478b; background-image:url(/images/nextgen/global/bg_banner_wide.jpg);
+        ">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+          <td>                <h1>Documentation Center</h1>
+</td>
+<td class="ctabox_container"><ul class="ctabox rounded_corner">
+  <li><a href="http://www.mathworks.com/programs/bounce/doc_tryit.html" class="trial" target="">Trial Software</a></li>
+  <li><a href="http://www.mathworks.com/support/web_downloads_bounce.html?s_cid=1008_degr_docdn_270055" class="update" target="">Product Updates</a></li>
+  <li class="banner_share">
+    <div class="addthis_toolbox addthis_default_style"> <a href="http://www.addthis.com/bookmark.php?v=250&pubid=mathworks" class="addthis_button_compact at300m"><span class="at300bs at15nc at15t_compact"></span>Share</a>
+      <div class="atclear"></div>
+      
+    <div class="atclear"></div></div>
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":true, "services_compact":"facebook,email,twitter,print,linkedin,favorites,google_plusone_share,more", "ui_open_windows":true, "ui_header_color":"#ffffff", "ui_header_background":"#3F74C1", "ui_cobrand":"MathWorks","data_track_clickback":true, ui_language: "en" };</script> 
+    <script type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/addthis_widget.js"></script> 
+  </li>
+  </ul>
+ </td>
+        </tr>
+          </tbody></table>
+    </div>
+</div>
+          <div class="content_frame">
+            <div class="grid_192">
+              <div class="site_container site_toc_closed">
+                <div class="toc_pane"><div xmlns:atict="http://www.arbortext.com/namespace/atict" class="toc_pane">&nbsp;
+<div class="toc_container_wrapper" tabindex="0" style="display: block; height: 754px; max-height: 754px; top: 10px; position: fixed;">
+<div class="toc_header">
+<div class="toc_icon" id="toc.bioinfo">
+
+</div>
+<h3>Contents</h3>
+</div><!--close_toc_header-->
+<div class="toc_container" style="height: 717px; max-height: 717px;">
+<!--BEGINNING OF TOC DATA-->
+<div class="toc_doc_center_home">
+<a href="http://www.mathworks.com/help/documentation-center.html">Documentation Center</a>
+</div>
+<ul>
+<li id="bioinfo.index.html" class="toc_expanded"><div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/index.html" class="corrected_url">Bioinformatics Toolbox</a></div>
+</div>
+<ul>
+<li id="bioinfo.getting-started-with-bioinformatics-toolbox.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/getting-started-with-bioinformatics-toolbox.html" class="corrected_url">Getting Started with Bioinformatics Toolbox</a></div>
+</div>
+</li><li id="bioinfo.examples.index.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/examples/index.html" class="corrected_url">Examples</a></div></div></li><li id="bioinfo.release-notes.html">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper">
+<a href="http://www.mathworks.com/help/bioinfo/release-notes.html" class="corrected_url">Release Notes</a></div>
+</div>
+</li>
+<li id="bioinfo.functionlist.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/functionlist.html" class="corrected_url">MATLAB Functions</a></div></div></li><li id="bioinfo.classeslist.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/classeslist.html" class="corrected_url">Classes</a></div></div></li><li id="bioinfo.index.html.1" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/index.html#high-throughput-sequencing" class="corrected_url">High-Throughput Sequencing</a></div>
+</div>
+<ul>
+<li id="bioinfo.data-import-and-management.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/data-import-and-management.html" class="corrected_url">Data Import and Management</a></div>
+</div>
+</li><li id="bioinfo.preprocessing.html.1" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/preprocessing.html" class="corrected_url">Preprocessing</a></div>
+</div>
+</li><li id="bioinfo.rna-seq.html.2" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/rna-seq.html" class="corrected_url">RNA</a></div>
+</div>
+<ul>
+<li class="toc_expanded"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Functions</div></div><ul>
+<li id="bioinfo.ngsbrowser.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/ngsbrowser.html" class="corrected_url">ngsbrowser</a></div></div></li>
+<li id="bioinfo.align2cigar.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/align2cigar.html" class="corrected_url">align2cigar</a></div></div></li>
+<li id="bioinfo.cigar2align.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/cigar2align.html" class="corrected_url">cigar2align</a></div></div></li>
+<li id="bioinfo.bowtie.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/bowtie.html" class="corrected_url">bowtie</a></div></div></li>
+<li id="bioinfo.bowtiebuild.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/bowtiebuild.html" class="corrected_url">bowtiebuild</a></div></div></li>
+<li id="bioinfo.mattest.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/mattest.html" class="corrected_url">mattest</a></div></div></li>
+<li id="bioinfo.mafdr.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/mafdr.html" class="corrected_url">mafdr</a></div></div></li>
+<li id="bioinfo.mavolcanoplot.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/mavolcanoplot.html" class="corrected_url">mavolcanoplot</a></div></div></li>
+<li id="bioinfo.mairplot.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/mairplot.html" class="corrected_url">mairplot</a></div></div></li>
+<li id="bioinfo.maboxplot.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/maboxplot.html" class="corrected_url">maboxplot</a></div></div></li>
+<li id="bioinfo.clustergram.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/clustergram.html" class="corrected_url">clustergram</a></div></div></li>
+<li id="bioinfo.redbluecmap.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/redbluecmap.html" class="corrected_url">redbluecmap</a></div></div></li>
+<li id="bioinfo.redgreencmap.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/redgreencmap.html" class="corrected_url">redgreencmap</a></div></div></li>
+<li id="bioinfo.rankfeatures.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/rankfeatures.html" class="corrected_url">rankfeatures</a></div></div></li>
+<li id="bioinfo.randfeatures.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/randfeatures.html" class="corrected_url">randfeatures</a></div></div></li>
+<li id="bioinfo.knnclassify.html" class="current_page"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="./Classify data using nearest neighbor method - MATLAB knnclassify_files/Classify data using nearest neighbor method - MATLAB knnclassify.htm" class="corrected_url">knnclassify</a></div></div></li>
+<li id="bioinfo.knnimpute.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/knnimpute.html" class="corrected_url">knnimpute</a></div></div></li>
+<li id="bioinfo.classperf.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/classperf.html" class="corrected_url">classperf</a></div></div></li>
+<li id="bioinfo.crossvalind.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/crossvalind.html" class="corrected_url">crossvalind</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Classes</div></div><ul>
+<li id="bioinfo.bioreadclass.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/bioreadclass.html" class="corrected_url">BioRead</a></div></div></li>
+<li id="bioinfo.biomapclass.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/biomapclass.html" class="corrected_url">BioMap</a></div></div></li>
+<li id="bioinfo.bioreadqualitystatisticsclass.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/bioreadqualitystatisticsclass.html" class="corrected_url">BioReadQualityStatistics</a></div></div></li>
+<li id="bioinfo.gffannotationclass.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/gffannotationclass.html" class="corrected_url">GFFAnnotation</a></div></div></li>
+<li id="bioinfo.gtfannotationclass.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/gtfannotationclass.html" class="corrected_url">GTFAnnotation</a></div></div></li>
+<li id="bioinfo.heatmap.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/heatmap.html" class="corrected_url">HeatMap</a></div></div></li>
+<li id="bioinfo.heatmapobject.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/heatmapobject.html" class="corrected_url">HeatMap object</a></div></div></li>
+<li id="bioinfo.clustergram.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/clustergram.html" class="corrected_url">clustergram</a></div></div></li>
+<li id="bioinfo.clustergramobject.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/clustergramobject.html" class="corrected_url">clustergram object</a></div></div></li>
+<li id="bioinfo.datamatrix.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/datamatrix.html" class="corrected_url">DataMatrix</a></div></div></li>
+<li id="bioinfo.datamatrixobject.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ref/datamatrixobject.html" class="corrected_url">DataMatrix object</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Examples and How To</div></div><ul>
+<li id="bioinfo.ug.storing-and-managing-short-read-sequence-data-in-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/storing-and-managing-short-read-sequence-data-in-objects.html" class="corrected_url">Manage Short-Read Sequence Data in Objects</a></div></div></li>
+<li id="bioinfo.ug.storing-and-managing-feature-annotations-in-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/storing-and-managing-feature-annotations-in-objects.html" class="corrected_url">Store and Manage Feature Annotations in Objects</a></div></div></li>
+<li id="bioinfo.ug.visualizing-and-investigating-short-read-alignments.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/visualizing-and-investigating-short-read-alignments.html" class="corrected_url">Visualize and Investigate Short-Read Alignments</a></div></div></li>
+<li id="bioinfo.ug.storing-and-managing-gene-expression-data-in-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/storing-and-managing-gene-expression-data-in-objects.html" class="corrected_url">Managing Gene Expression Data in Objects</a></div></div></li>
+<li id="bioinfo.ug.representing-expression-data-values-in-datamatrix-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/representing-expression-data-values-in-datamatrix-objects.html" class="corrected_url">Representing Expression Data Values in DataMatrix Objects</a></div></div></li>
+<li id="bioinfo.ug.representing-expression-data-values-in-exptdata-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/representing-expression-data-values-in-exptdata-objects.html" class="corrected_url">Representing Expression Data Values in ExptData Objects</a></div></div></li>
+<li id="bioinfo.ug.representing-sample-and-feature-metadata-in-metadata-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/representing-sample-and-feature-metadata-in-metadata-objects.html" class="corrected_url">Representing Sample and Feature Metadata in MetaData Objects</a></div></div></li>
+<li id="bioinfo.ug.representing-experiment-information-in-a-miame-object.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/representing-experiment-information-in-a-miame-object.html" class="corrected_url">Representing Experiment Information in a MIAME Object</a></div></div></li>
+<li id="bioinfo.ug.representing-all-data-and-information-in-an-expressionset-object.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/representing-all-data-and-information-in-an-expressionset-object.html" class="corrected_url">Representing All Data in an ExpressionSet Object</a></div></div></li>
+<li id="bioinfo.ug.identifying-differentially-expressed-genes-from-rna-seq-data.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/identifying-differentially-expressed-genes-from-rna-seq-data.html" class="corrected_url">Identifying Differentially Expressed Genes from RNA-Seq Data</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Concepts</div></div><ul>
+<li id="bioinfo.ug.features-and-functions.html#bp51zvt-1"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/ug/features-and-functions.html#bp51zvt-1" class="corrected_url">Statistical Learning and Visualization</a></div></div></li>
+</ul>
+</li>
+</ul>
+</li><li id="bioinfo.chip-seq.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/chip-seq.html" class="corrected_url">DNA</a></div>
+</div>
+</li><li id="bioinfo.gene-ontology.html.4" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/gene-ontology.html" class="corrected_url">Gene Ontology</a></div>
+</div>
+</li><li id="bioinfo.network-analysis-and-visualization.html.5" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/network-analysis-and-visualization.html" class="corrected_url">Network Analysis and Visualization</a></div>
+</div>
+</li></ul>
+</li><li id="bioinfo.index.html.2" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/index.html#microarray-analysis" class="corrected_url">Microarray Analysis</a></div>
+</div>
+</li><li id="bioinfo.index.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/index.html#sequence-analysis" class="corrected_url">Sequence Analysis</a></div>
+</div>
+</li><li id="bioinfo.structural-analysis.html.4" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/structural-analysis.html" class="corrected_url">Structural Analysis</a></div>
+</div>
+</li><li id="bioinfo.index.html.5" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.com/help/bioinfo/index.html#mass-spectrometry-and-bioanalytics" class="corrected_url">Mass Spectrometry and Bioanalytics</a></div>
+</div>
+</li></ul>
+</li>
+</ul>
+<!--END OF TOC DATA-->
+</div><!--close_toc_container-->
+</div><!--close_toc_container_wrapper-->
+</div><!--close_toc_pane-->
+</div><!--close_toc_pane-->
+                <div class="doc_content_container">
+                  <div class="content_container" id="content_container"> 
+
+    
+    
+    
+    
+    
+    
+
+	
+    
+    
+               
+ 
+            
+<div class="docsearch_container">
+<form id="docsearch_form" name="docsearch_form" method="get" action="http://www.mathworks.com/help/search/doccenter/en/R2013a">
+<label for="docsearch" class="hidden">Search MATLAB Documentation</label>
+<input type="text" name="qdoc" id="docsearch" class="textfield toggleval" autocomplete="off" value="Search R2013a Documentation">
+<input type="submit" name="submitsearch" id="submitsearch" value="Search" class="docsearch_submit" disabled="">
+<script type="text/javascript">
+         $("input[name='qdoc']").toggleVal({
+            focusClass: "hasFocus"
+         });
+       </script>
+</form>
+</div>
+<div class="breadcrumb_container">
+<div class="breadcrumbs">
+<div class="breadcrumbs_outer"><div class="breadcrumbs_inner"><ul><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_first"><a href="http://www.mathworks.com/help/documentation-center.html" itemprop="url"><span itemprop="title">R2013a</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_product"><a href="http://www.mathworks.com/help/bioinfo/index.html" itemprop="url"><span itemprop="title">Bioinformatics Toolbox</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="http://www.mathworks.com/help/bioinfo/index.html#high-throughput-sequencing" itemprop="url"><span itemprop="title">High-Throughput Sequencing</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_last"><a href="http://www.mathworks.com/help/bioinfo/rna-seq.html" itemprop="url"><span itemprop="title">RNA</span></a></li>
+</ul></div></div></div>
+</div>
+
+<section id="doc_center_content">
+<a name="bqbbfxv-1"></a><a class="indexterm" name="zmw57dd0e90811"></a><a class="indexterm" name="zmw57dd0e90816"></a><div itemprop="content"><h1 class="r2013a" itemprop="title">knnclassify</h1><!-- SYNCHTO: _a1041278976.html --><div class="doc_topic_desc"><p itemprop="purpose">Classify data using nearest neighbor method</p></div></div>
+<h2 id="syntax">Syntax</h2><div class="syntax_signature"><p class="synopsis"><tt><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>)<br><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>)<br><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>, <i><tt>distance</tt></i>)<br><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>, <i><tt>distance</tt></i>,<i><tt>rule</tt></i>)<br></tt></p></div><div class="clear"></div><div itemprop="content"><a name="bqpb0q7-1"></a><h2>Arguments</h2><table cellspacing="0" class="body" cellpadding="4" border="0"><colgroup><col width="19%"><col width="81%"></colgroup><tbody><tr valign="top"><td><i><tt>Sample</tt></i></td><td>Matrix whose rows will be classified
+into groups. <i><tt>Sample</tt></i> must have the same
+number of columns as <i><tt>Training</tt></i>.</td></tr>
+<tr valign="top"><td><i><tt>Training</tt></i></td><td>Matrix used to group the rows in the
+matrix <i><tt>Sample</tt></i>. <i><tt>Training</tt></i> must
+have the same number of columns as <i><tt>Sample</tt></i>.
+Each row of <i><tt>Training</tt></i> belongs to the group
+whose value is the corresponding entry of <i><tt>Group</tt></i>.</td></tr>
+<tr valign="top"><td><i><tt>Group</tt></i></td><td>Vector whose distinct values define the
+grouping of the rows in <i><tt>Training</tt></i>.</td></tr>
+<tr valign="top"><td><i><tt>k</tt></i></td><td>The number of nearest neighbors used
+in the classification. Default is <tt>1</tt>.</td></tr>
+<tr valign="top"><td><i><tt>distance</tt></i></td><td>String specifying the distance metric.
+Choices are:<ul type="disc"><li><p><tt>'euclidean'</tt> — Euclidean
+distance (default)</p></li><li><p><tt>'cityblock'</tt> — Sum of absolute
+differences</p></li><li><p><tt>'cosine'</tt> — One minus the
+cosine of the included angle between points (treated as vectors)</p></li><li><p><tt>'correlation'</tt> — One minus
+the sample correlation between points (treated as sequences of values)</p></li><li><p><tt>'hamming'</tt> — Percentage of
+bits that differ (suitable only for binary data)</p></li></ul></td></tr>
+<tr valign="top"><td><i><tt>rule</tt></i></td><td>String to specify the rule used to decide
+how to classify the sample. Choices are:<ul type="disc"><li><p><tt>'nearest'</tt> — Majority rule
+with nearest point tie-break (default)</p></li><li><p><tt>'random'</tt> — Majority rule
+with random point tie-break</p></li><li><p><tt>'consensus'</tt> — Consensus
+rule</p></li></ul></td></tr>
+</tbody></table><p></p></div><div itemprop="content"><a name="bqbbfxw-2"></a><h2>Description</h2><p><span itemprop="syntax"><tt><a name="bqbbfxw-3"></a><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>)</tt></span> classifies
+the rows of the data matrix <i><tt>Sample</tt></i> into
+groups, based on the grouping of the rows of <i><tt>Training</tt></i>. <i><tt>Sample</tt></i> and <i><tt>Training</tt></i> must
+be matrices with the same number of columns. <i><tt>Group</tt></i> is
+a vector whose distinct values define the grouping of the rows in <i><tt>Training</tt></i>.
+ Each row of <i><tt>Training</tt></i> belongs to the group
+whose value is the corresponding entry of <i><tt>Group</tt></i>.
+ <tt>knnclassify</tt> assigns each row of <tt>Sample</tt> to
+the group for the closest row of <i><tt>Training</tt></i>. <i><tt>Group</tt></i> can
+be a numeric vector, a string array, or a cell array of strings. <i><tt>Training</tt></i> and <i><tt>Group</tt></i> must
+have the same number of rows. <tt>knnclassify</tt> treats <tt>NaN</tt>s
+or empty strings in <i><tt>Group</tt></i> as missing values,
+and ignores the corresponding rows of <i><tt>Training</tt></i>. <i><tt>Class</tt></i> indicates
+which group each row of <i><tt>Sample</tt></i> has been
+assigned to, and is of the same type as <i><tt>Group</tt></i>.</p><p><span itemprop="syntax"><tt><a name="bqbbfxw-4"></a><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>)</tt></span> enables
+you to specify <tt>k</tt>, the number of nearest neighbors
+used in the classification. Default is <tt>1</tt>.</p><p><span itemprop="syntax"><tt><a name="bqbbfxw-5"></a><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>, <i><tt>distance</tt></i>)</tt></span> enables
+you to specify the distance metric. Choices for <i><tt>distance</tt></i> are:</p><ul type="disc"><li><p><tt>'euclidean'</tt> — Euclidean
+distance (default)</p></li><li><p><tt>'cityblock'</tt> — Sum of absolute
+differences</p></li><li><p><tt>'cosine'</tt> — One minus the
+cosine of the included angle between points (treated as vectors)</p></li><li><p><tt>'correlation'</tt> — One minus
+the sample correlation between points (treated as sequences of values)</p></li><li><p><tt>'hamming'</tt> — Percentage of
+bits that differ (suitable only for binary data)</p></li></ul><p><span itemprop="syntax"><tt><a name="bqbbfxw-6"></a><i><tt>Class</tt></i> =
+knnclassify(<i><tt>Sample</tt></i>, <i><tt>Training</tt></i>, <i><tt>Group</tt></i>, <i><tt>k</tt></i>, <i><tt>distance</tt></i>,&nbsp;<i><tt>rule</tt></i>)</tt></span> enables you
+to specify the rule used to decide how to classify the sample. Choices
+for <i><tt>rule</tt></i> are:</p><ul type="disc"><li><p><tt>'nearest'</tt> — Majority rule
+with nearest point tie-break (default)</p></li><li><p><tt>'random'</tt> — Majority rule
+with random point tie-break</p></li><li><p><tt>'consensus'</tt> — Consensus
+rule</p></li></ul><p>The default behavior is to use majority rule. That is, a sample
+point is assigned to the class the majority of the <tt>k</tt> nearest
+neighbors are from. Use <tt>'consensus'</tt> to require
+a consensus, as opposed to majority rule. When using the <tt>'consensus'</tt> option,
+points where not all of the <tt>k</tt> nearest neighbors
+are from the same class are not assigned to one of the classes. Instead
+the output <tt>Class</tt> for these points is <tt>NaN</tt> for
+numerical groups or <tt>''</tt> for string named groups.
+When classifying to more than two groups or when using an even value
+for <tt>k</tt>,  it might be necessary to break a tie in
+the number of nearest neighbors. Options are <tt>'random'</tt>,
+which selects a random tiebreaker, and <tt>'nearest'</tt>,
+which uses the nearest neighbor among the tied groups to break the
+tie. The default behavior is majority rule, with nearest tie-break.</p></div><div itemprop="content"><a name="bqkfuun-1"></a><h2>Examples</h2><a name="bqt5bqe"></a><p class="title"><b>Classifying Rows</b></p><p>The following example classifies the rows of the matrix <tt>sample</tt>:</p><pre class="programlisting">sample = [.9 .8;.1 .3;.2 .6]
+
+sample =
+    0.9000    0.8000
+    0.1000    0.3000
+    0.2000    0.6000
+
+training=[0 0;.5 .5;1 1]
+
+training =
+         0         0
+    0.5000    0.5000
+    1.0000    1.0000
+
+group = [1;2;3]
+
+group =
+     1
+     2
+     3
+
+class = knnclassify(sample, training, group)
+
+class =
+     3
+     1
+     2</pre><p>Row 1 of <tt>sample</tt> is closest to row 3 of <tt>training</tt>,
+so <tt>class(1) = 3</tt>. Row 2 of <tt>sample</tt> is
+closest to row 1 of <tt>training</tt>, so <tt>class(2)
+= 1</tt>. Row 3 of <tt>sample</tt> is closest to row
+2 of <tt>training</tt>, so <tt>class(3) = 2</tt>.</p><a name="bqt5bvq-1"></a><p class="title"><b>Classifying Rows into One of Two Groups</b></p><p>The following example classifies each row of the data in <tt>sample</tt> into
+one of the two groups in <tt>training</tt>. The following
+commands create the matrix <tt>training</tt> and the grouping
+variable <tt>group</tt>, and plot the rows of <tt>training</tt> in
+two groups. </p><pre class="programlisting">training = [mvnrnd([ 1  1],   eye(2), 100); ...
+            mvnrnd([-1 -1], 2*eye(2), 100)];
+group = [repmat(1,100,1); repmat(2,100,1)];
+gscatter(training(:,1),training(:,2),group,'rb','+x');
+legend('Training group 1', 'Training group 2');
+hold on;</pre><p class="programlistingindent">
+<img src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/function_knnclassify_example1.gif" height="588" width="680" alt="" class="scaled-image"></p><p>The following commands create the matrix <tt>sample</tt>,
+classify its rows into two groups, and plot the result.</p><pre class="programlisting">sample = unifrnd(-5, 5, 100, 2);
+% Classify the sample using the nearest neighbor classification
+c = knnclassify(sample, training, group);
+gscatter(sample(:,1),sample(:,2),c,'mc'); hold on;
+legend('Training group 1','Training group 2', ...
+       'Data in group 1','Data in group 2');
+hold off; </pre><p class="programlistingindent">
+<img src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/function_knnclassify_example2.gif" height="588" width="680" alt="" class="scaled-image"></p><a name="bqt5bx1-1"></a><p class="title"><b>Classifying Rows Using the Three Nearest Neighbors</b></p><p>The following example uses the same data as in <a href="http://www.mathworks.com/help/bioinfo/ref/knnclassify.html#bqt5bvq-1" class="intrnllnk">Classifying Rows into One of Two Groups</a>,
+but classifies the rows of <tt>sample</tt> using three nearest
+neighbors instead of one.</p><pre class="programlisting">gscatter(training(:,1),training(:,2),group,'rb','+x');
+hold on;
+c3 = knnclassify(sample, training, group, 3);
+gscatter(sample(:,1),sample(:,2),c3,'mc','o');
+legend('Training group 1','Training group 2','Data in group 1','Data in group 2');</pre><p class="programlistingindent">
+<img src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/function_knnclassify_example3.gif" height="588" width="680" alt="" class="scaled-image"></p><p>If you compare this plot with the one in <a href="http://www.mathworks.com/help/bioinfo/ref/knnclassify.html#bqt5bvq-1" class="intrnllnk">Classifying Rows into One of Two Groups</a>, you see that some
+of the data points are classified differently using three nearest
+neighbors.</p></div><div itemprop="content"><a name="bqkfwex-1"></a><h2>References</h2><a name="bqkfwex-3"></a><p>[1] Mitchell, T. (1997). Machine Learning,
+(McGraw-Hill).</p></div><h2>See Also</h2><p><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/classify.html"><span itemprop="name"><tt>classify</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/bioinfo/ref/classperf.html"><span itemprop="name"><tt>classperf</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/bioinfo/ref/crossvalind.html"><span itemprop="name"><tt>crossvalind</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/bioinfo/ref/knnimpute.html"><span itemprop="name"><tt>knnimpute</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/svmclassify.html"><span itemprop="name"><tt>svmclassify</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="http://www.mathworks.com/help/stats/svmtrain.html"><span itemprop="name"><tt>svmtrain</tt></span></a></span></p>
+</section>
+<div class="feedbackblock">Was this topic helpful?
+<input type="button" value="Yes" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-YES-R2013a&#39;);">
+<input type="button" value="No" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-NO-R2013a&#39;);">
+</div>
+<!--Last updated: Sun Feb 24 20:48:27 EST 2013-->
+<div class="footer_container execmatlabproduct">
+<div class="footer">
+<ul class="footernav">
+              <li class="footernav_trademarks"><a href="matlab:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li>
+              <li class="footernav_trademarks"><a href="matlab:web([matlabroot '/trademarks.txt'])">Trademarks</a></li>
+              <li class="footernav_patents"><a href="matlab:web([matlabroot '/patents.txt'])">Patents</a></li>
+              <li class="footernav_help"><a href="matlab:web([matlabroot '/license.txt'])">Terms of Use</a></li>
+           </ul>
+<div class="copyright">© 1994-2013 The MathWorks, Inc.</div>
+</div>
+</div>
+ </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_192">
+<div class="fat_footer">
+<div class="callout_container rounded gradient margined_0 "> <div class="callout_content bg_left left_top" style="background-image:url(/images/nextgen/callouts/bg-trial-arrow_02.png);"> <h3>Try MATLAB, Simulink, and Other Products</h3>
+<a href="http://www.mathworks.com/programs/trials/trial_request.html?prodcode=BI&eventid=569399111&s_iid=doc_trial_BI_footer" class="cta">Get trial now</a>
+</div>
+</div>
+</div>
+</div>
+      <div class="grid_192"> <div class="footer_container">
+<div class="footer">
+<div class="social_media_icon_container">
+<div class="social_media_icons">
+<ul class="footernav">
+<li class="footernav_rss"><a href="http://www.mathworks.com/company/rss/index.html"></a></li>
+<li class="footernav_google"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_fbk&url=https://plus.google.com/117177960465154322866?prsrc=3" target="_blank"></a></li>
+<li class="footernav_facebook"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_fbk&url=http://www.facebook.com/MATLAB" target="_blank"></a></li>
+<li class="footernav_twitter"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_cid=mlc_twt&url=http://www.twitter.com/MATLAB" target="_blank"></a></li>
+</ul>
+</div>
+<p><em>Join the conversation</em></p>
+</div>
+<ul class="footernav">
+<li class="footernav_piracy"><a href="http://www.mathworks.com/company/aboutus/policies_statements/piracy.html">Preventing Piracy</a></li>
+<li class="footernav_privacy"><a href="http://www.mathworks.com/company/aboutus/policies_statements/">Privacy Policy</a></li>
+<li class="footernav_trademarks"><a href="http://www.mathworks.com/company/aboutus/policies_statements/trademarks.html">Trademarks</a></li>
+<li class="footernav_patents"><a href="http://www.mathworks.com/company/aboutus/policies_statements/patents.html">Patents</a></li>
+<li class="footernav_help"><a href="http://www.mathworks.com/help.html">Site Help</a></li>
+</ul>
+<div class="copyright">© 1994-2013 The MathWorks, Inc.</div>
+</div>
+</div>
+<!-- SURVEY POPUP CODE - BEGINS -->
+<script type="text/javascript" language="javascript">
+function getCookie(name) {
+var dc = document.cookie;
+var prefix = name + "=";
+var begin = dc.indexOf("; " + prefix);
+if (begin == -1) {
+begin = dc.indexOf(prefix);
+if (begin != 0) return null;
+} else
+{
+begin += 2;
+}
+var end = document.cookie.indexOf(";", begin);
+if (end == -1)
+end = dc.length;
+return unescape(dc.substring(begin + prefix.length, end));
+}
+// Sets the cookie for users who get the invite
+function setCookie(name, value, expires, path, domain, secure) {
+var curCookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "");
+document.cookie = curCookie;
+}
+function popup_survey()
+{
+setCookie("survey", "yes", new Date("April 30, 2011"), "/");
+openWindow('/programs/customersat/surveys/invites/invite_support.html', 460, 150, 'scrollbars=no,resizable=no', 'invitewin');
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+//document.getElementById("Cookies").innerHTML = "visitedSupport:" + getCookie("visitedSupport") + "<br/> Survey:" + getCookie("survey");
+if((getCookie("visitedSupport") == "yes") && (getCookie("survey") == null))
+{
+popup_survey();
+}
+</script>
+<!-- SURVEY POPUP CODE - ENDS -->
+<!-- SiteCatalyst code version: H.24.4.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="./Classify data using nearest neighbor method - MATLAB knnclassify_files/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4. --> </div>
+    </div>
+    
+    
+
+</body></html>

@@ -1,0 +1,35 @@
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+c:\users\pedro\documents\visual studio 2010\Projects\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pedro\Desktop\Uni2013\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csprojResolveAssemblyReference.cache
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\pedro.lucas\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.csproj.GenerateResource.Cache
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.exe
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\bin\Debug\Analisadores.pdb
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.FormAnalizador.resources
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\Analisadores.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pedro\Desktop\Compiladores\Analisadores\Analisadores\obj\x86\Debug\GenerateResource.write.1.tlog

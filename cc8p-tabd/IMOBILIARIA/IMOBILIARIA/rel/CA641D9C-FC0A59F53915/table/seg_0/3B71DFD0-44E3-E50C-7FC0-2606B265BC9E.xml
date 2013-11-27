@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B71DFD0-44E3-E50C-7FC0-2606B265BC9E" name="FATURAMENTO">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:28:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NF" id="66B5AF94-E1AC-7F6B-3DEC-08E86116976C">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:28:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_IMOVEL" id="58A420B3-2DBA-6F91-B43F-86AAB78ED4F3">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:29:09 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0F1F8D9B-829E-5BBB-B8FE-02B77A8D4AF4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A3B4610-767C-AF2C-7BE0-58E1094D052D" referredColumn="0F1F8D9B-829E-5BBB-B8FE-02B77A8D4AF4"/>
+</associations>
+</Column>
+<Column name="CPF_CNPJ_COMP" id="BF602BB1-B6E2-53C6-7076-87DE73CB454D">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:28:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<delegate>72870CE2-7AFF-7ECB-D645-9EC33478737B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D62F76E0-7080-0561-933E-69ABEB454F65" referredColumn="72870CE2-7AFF-7ECB-D645-9EC33478737B"/>
+</associations>
+</Column>
+<Column name="VLR_CORRETAGEM" id="7CF06718-6A98-8DDD-B408-CC52E888C94A">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:28:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VLR" id="B7CD4460-D4DE-2717-61BA-362E5A4A8597">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:29:09 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TIPO" id="B632A01B-F1F9-8708-F717-6DABDB57442F">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:32:25 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B0570D6F-00B5-A60F-FE4B-31B8732823ED</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A3B4610-767C-AF2C-7BE0-58E1094D052D" referredColumn="B0570D6F-00B5-A60F-FE4B-31B8732823ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F247FD04-F375-0171-E9B1-3A9886197FA4" name="NOTA_FISCAL_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:28:17 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66B5AF94-E1AC-7F6B-3DEC-08E86116976C"/>
+<colUsage columnID="58A420B3-2DBA-6F91-B43F-86AAB78ED4F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1DBB866-C837-74FB-7D98-5A1472C45008" name="FATURAMENTO_COMPRADOR_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:30:33 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF602BB1-B6E2-53C6-7076-87DE73CB454D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68C07C2B-30FB-6C47-7ECE-958E06B92951" name="FATURAMENTO_IMOVEL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:32:25 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58A420B3-2DBA-6F91-B43F-86AAB78ED4F3"/>
+<colUsage columnID="B632A01B-F1F9-8708-F717-6DABDB57442F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A48959DA-C187-31A0-7C8B-E030D0039B91" name="FATURAMENTO_LOCAL_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:34:23 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

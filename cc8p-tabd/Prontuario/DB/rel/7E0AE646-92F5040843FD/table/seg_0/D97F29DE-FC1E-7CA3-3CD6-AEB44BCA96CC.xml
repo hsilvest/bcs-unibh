@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D97F29DE-FC1E-7CA3-3CD6-AEB44BCA96CC" name="MEDICO">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:19:10 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRM" id="65CB5844-3C5F-86EC-E6E4-ACD370D8A541">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:19:30 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_MEDICO" id="44C67556-EBD9-5E70-732D-E28DBABC499F">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:19:30 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ESP" id="D84DAD0F-BB0F-4A3A-6B83-BBC60D3D4A9B">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:19:30 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_ESP" id="F8E90C50-C88F-60E9-938D-F281A94C24C1">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:19:30 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF7B8668-9235-DBF1-0562-6007FF37C75D" name="MEDICO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-24 03:21:12 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65CB5844-3C5F-86EC-E6E4-ACD370D8A541"/>
+<colUsage columnID="D84DAD0F-BB0F-4A3A-6B83-BBC60D3D4A9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

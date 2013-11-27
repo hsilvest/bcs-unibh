@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E3C9FE4-1857-75A1-0D91-36A7F90B9DC1" name="COMPRADOR">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:10:05 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPF_CNPJ_COMP" id="DFA84B07-ED2D-6086-9D10-B0CDAEF7BE6A">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:11:02 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_COMP" id="F5BD7284-F83A-78DE-4917-5BAA432C1AB3">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:11:02 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C41D19A9-611B-7B5D-2346-A5797D9FB24A" name="COMPRADOR_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 15:11:02 UTC</createdTime>
+<ownerDesignName>IMOBILIARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA84B07-ED2D-6086-9D10-B0CDAEF7BE6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

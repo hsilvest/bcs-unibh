@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9319BA28-E4B9-6C2E-CE22-578071B3560D" name="SOFTWARE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:42:19 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_SOFTWARE" id="93FF5678-E4D4-B91D-2A14-BB81C3A8C4A2">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:45:34 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_SOFTWARE" id="0B9C9745-7144-A319-E9AD-AC6B528C6456">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:45:34 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_FABRICA" id="9C21B18E-8C65-B92F-82A5-3BB03D05F8B9">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:45:34 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_FABRICA" id="24525048-8258-567F-21EA-6BD20137513D">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:45:34 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D600899D-81EF-2812-5057-CE22383431B7" name="SOFTWARE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 23:45:50 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93FF5678-E4D4-B91D-2A14-BB81C3A8C4A2"/>
+<colUsage columnID="9C21B18E-8C65-B92F-82A5-3BB03D05F8B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

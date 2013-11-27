@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3EE1D87-0355-C3AA-DE89-F779DD7CED78" name="FILIAL">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:22:09 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_FILIAL" id="D265EAC5-B714-0A84-8005-4BD0993BC1F5">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:23:31 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_FILIAL" id="5F4F3003-44A7-34C8-3187-885DFFBDF7F9">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:23:31 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MATRIZ" id="FDF7760F-7242-453E-EA7B-141F6B134F10">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:05:33 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>285198B2-4AB1-B9EC-68E4-1C5A3218540A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AF03860-D5AC-F1C0-7CE1-30BC667DD79B" referredColumn="285198B2-4AB1-B9EC-68E4-1C5A3218540A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F20D83AE-07BB-F20E-B210-16ACF46167DB" name="FILIAL_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-31 15:23:31 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D265EAC5-B714-0A84-8005-4BD0993BC1F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C99DBD73-F221-3CAA-1A79-964738E672F9" name="FILIAL_MATRIZ_FK">
+<createdBy>USER</createdBy>
+<createdTime>2013-11-04 00:05:44 UTC</createdTime>
+<ownerDesignName>SISTEMAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDF7760F-7242-453E-EA7B-141F6B134F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

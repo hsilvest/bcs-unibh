@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B84FBF53-C2D3-A6A6-3DB2-20D83ABB8523" name="ESPECIALIDADE">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:34:32 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ESPECIALIDADE" id="0C3464FD-6D94-E35E-6610-1137CF59F623">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:34:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_ESPECIALIDADE" id="1150EFAA-A8C1-A2EE-0198-E1BCC5A0ADB0">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:34:51 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18EC3447-41CF-5EF0-A3CC-A931EEC06906" name="ESPECIALIDADE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2013-10-23 02:35:32 UTC</createdTime>
+<ownerDesignName>DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C3464FD-6D94-E35E-6610-1137CF59F623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
